@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Interactive : MonoBehaviour {
+public class Touchable : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
