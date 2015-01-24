@@ -17,6 +17,7 @@ public class CatController : MonoBehaviour
 	{
 		if (collision.gameObject.layer != catIgnoreLayer)
 		{
+			PlayerPrefs.SetInt ("LastLevel", Application.loadedLevel);
 			Application.LoadLevel ("gameOver");
 		}
 	}
