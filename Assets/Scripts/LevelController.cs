@@ -5,6 +5,7 @@ public class LevelController : MonoBehaviour
 {
 	void Start ()
 	{
+		Screen.lockCursor = false;
 	}
 	
 	void Update ()
@@ -12,6 +13,10 @@ public class LevelController : MonoBehaviour
 		if (Input.GetKey(KeyCode.Return))
 		{
 			Application.LoadLevel(Application.loadedLevel + 1);
+		}
+		else if (Input.GetKey(KeyCode.Escape))
+		{
+			Application.LoadLevel("menu");
 		}
     }
 }
