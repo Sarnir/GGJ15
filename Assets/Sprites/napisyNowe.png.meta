@@ -1,7 +1,18 @@
 fileFormatVersion: 2
 guid: 4ebcbce089c7f7d4cb7fe1e7f1ca5597
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: textDragPlank
+    21300002: textBalloonsPop
+    21300004: textFelineMode
+    21300006: textSnip
+    21300008: textBalance
+    21300010: textCongratulations
+    21300012: textEscape
+    21300014: textEnter
+    21300016: textTitle
+    21300018: textPlay
+    21300020: textExit
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -27,7 +38,7 @@ TextureImporter:
     filterMode: -1
     aniso: 16
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -42,6 +53,116 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: textDragPlank
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 915
+        width: 236
+        height: 103
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: textBalloonsPop
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 911
+        width: 232
+        height: 102
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: textFelineMode
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 800
+        width: 428
+        height: 98
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: textSnip
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 738
+        width: 86
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: textBalance
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 732
+        width: 269
+        height: 48
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: textCongratulations
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 682
+        width: 322
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: textEscape
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 616
+        width: 284
+        height: 48
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: textEnter
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 568
+        width: 326
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: textTitle
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 222
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: textPlay
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 428
+        width: 83
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: textExit
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 431
+        width: 83
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
