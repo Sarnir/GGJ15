@@ -4,7 +4,7 @@ using System.Collections;
 [RequireComponent(typeof(Rigidbody2D))]
 public class Touchable : MonoBehaviour {
 
-	const float maxSpeed = 20.0f;
+	const float maxSpeed = 2000.0f;
 	bool isTouched;
 	bool isMouseOver;
 
@@ -19,11 +19,11 @@ public class Touchable : MonoBehaviour {
 	{
 		if(isTouched)
 		{
-			var timeFactor = Time.unscaledDeltaTime;
+			var timeFactor = Time.fixedDeltaTime;
+			//var timeFactor = Time.unscaledDeltaTime;
 			var force = new Vector2(Input.GetAxis("Mouse X") / timeFactor, Input.GetAxis("Mouse Y") / timeFactor);
+			force /= Time.timeScale;
 			rigidbody2D.AddForce(force);
-			Vector2 velocity = rigidbody2D.velocity;
-			rigidbody2D.velocity = Vector2.ClampMagnitude(rigidbody2D.velocity, maxSpeed);
 		}
 	}
 	
@@ -31,6 +31,10 @@ public class Touchable : MonoBehaviour {
 	void Update ()
 	{
 		SetHighlighted(isTouched || isMouseOver);
+
+		//Vector2 velocity = rigidbody2D.velocity;
+
+		//rigidbody2D.velocity = velocity;
 	}
 
 	Vector2 GetMousePosition()
