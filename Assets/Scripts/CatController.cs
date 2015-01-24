@@ -7,12 +7,10 @@ public class CatController : MonoBehaviour
 
 	void Start ()
 	{
-		print ("MYAAA!!! SEE????");
 	}
 
 	void Update ()
 	{
-		
 	}
 	
 	void OnCollisionEnter2D(Collision2D collision)
