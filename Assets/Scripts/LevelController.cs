@@ -8,6 +8,7 @@ public class LevelController : MonoBehaviour
 	const float shiftSpeed = 2.0f;
 	bool slowDown;
 	float lerpProgress;
+	bool levelCleared;
 
 	void Start ()
 	{
@@ -15,12 +16,41 @@ public class LevelController : MonoBehaviour
 
 		Time.timeScale = normalScale;
 		lerpProgress = 0.5f;
-		slowDown = true;	
+		slowDown = true;
+		levelCleared = false;
+
+		StartCoroutine(CheckIfLevelCleared());
+	}
+
+	IEnumerator CheckIfLevelCleared()
+	{
+		Rigidbody2D[] physicObjects = FindObjectsOfType(typeof(Rigidbody2D)) as Rigidbody2D[];
+		bool allSleeping = false;
+		
+		while(!levelCleared)
+		{
+			while(Screen.lockCursor)
+			{
+				yield return null;
+			}
+		
+			levelCleared = true;
+
+			foreach (Rigidbody2D physicObject in physicObjects) 
+			{
+				if(!physicObject.IsSleeping())
+				{
+					levelCleared = false;
+					yield return null;
+					break;
+				}
+			}
+		}
 	}
 	
 	void Update ()
 	{
-		if (Input.GetKey(KeyCode.Return))
+		if (Input.GetKey(KeyCode.Return) || levelCleared)
 		{
 			Application.LoadLevel(Application.loadedLevel + 1);
 		}
@@ -39,7 +69,7 @@ public class LevelController : MonoBehaviour
 		else
 			lerpProgress += Time.fixedDeltaTime * shiftSpeed;
 
-		lerpProgress = Mathf.Clamp(lerpProgress, 0.0f, 1.0f);
+		lerpProgress = Mathf.Clamp01(lerpProgress);
 
 		Time.timeScale = Mathf.Lerp(slowmoScale, normalScale, lerpProgress);
     }
