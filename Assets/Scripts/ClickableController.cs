@@ -1,17 +1,18 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[RequireComponent(typeof(SpriteRenderer))]
 public class ClickableController : MonoBehaviour
 {
 	public Sprite button_on;
 	public Sprite button_off;
 	public GameObject stringOwner;
-
-	private SpriteRenderer sr;
+	
+	SpriteRenderer spriteRenderer;
 
 	void Start ()
 	{
-		sr = GetComponent<SpriteRenderer>();
+		spriteRenderer = GetComponent<SpriteRenderer>();
 	}
 
 	void Update ()
@@ -20,12 +21,12 @@ public class ClickableController : MonoBehaviour
 
 	void OnMouseDown()
 	{
-		sr.sprite = button_on;
+		spriteRenderer.sprite = button_on;
 		Destroy(stringOwner.GetComponent<DistanceJoint2D>());
 	}
 
 	void OnMouseUp()
 	{
-		sr.sprite = button_off;
+		spriteRenderer.sprite = button_off;
 	}
 }
