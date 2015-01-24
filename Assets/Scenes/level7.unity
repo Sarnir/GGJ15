@@ -324,6 +324,7 @@ GameObject:
   - 212: {fileID: 278180546}
   - 61: {fileID: 278180545}
   - 50: {fileID: 278180544}
+  - 114: {fileID: 278180543}
   m_Layer: 0
   m_Name: plankDynamic
   m_TagString: Untagged
@@ -331,6 +332,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &278180543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11464986, guid: f3b0ddb0b0c864844a23705cfd842ea3,
+    type: 2}
+  m_PrefabInternal: {fileID: 1841082286}
+  m_GameObject: {fileID: 278180542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1de7e3910300fd44084f2222173a7349, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorSpritePrefab: {fileID: 0}
 --- !u!50 &278180544
 Rigidbody2D:
   m_ObjectHideFlags: 0

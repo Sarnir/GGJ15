@@ -1,8 +1,7 @@
 fileFormatVersion: 2
-guid: 9815a88ef2f26844eb0afe5aff6453ff
+guid: 4ebcbce089c7f7d4cb7fe1e7f1ca5597
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: kursor_0
+  fileIDToRecycleName: {}
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -28,7 +27,7 @@ TextureImporter:
     filterMode: -1
     aniso: 16
     mipBias: -1
-    wrapMode: 1
+    wrapMode: -1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -43,16 +42,6 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites:
-    - name: kursor_0
-      rect:
-        serializedVersion: 2
-        x: 1007
-        y: 614
-        width: 446
-        height: 472
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 16, y: 11, z: 0, w: 14}
+    sprites: []
   spritePackingTag: 
   userData: 
