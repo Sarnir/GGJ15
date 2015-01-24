@@ -6,13 +6,16 @@ public class Touchable : MonoBehaviour {
 
 	const float maxSpeed = 2000.0f;
 	bool isTouched;
-	bool isMouseOver;
 
 	// Use this for initialization
 	void Start ()
 	{
 		isTouched = false;
-		isMouseOver = false;
+	}
+
+	public bool IsTouched()
+	{
+		return isTouched;
 	}
 
 	void FixedUpdate()
@@ -30,11 +33,6 @@ public class Touchable : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
-		SetHighlighted(isTouched || isMouseOver);
-
-		//Vector2 velocity = rigidbody2D.velocity;
-
-		//rigidbody2D.velocity = velocity;
 	}
 
 	Vector2 GetMousePosition()
@@ -56,25 +54,5 @@ public class Touchable : MonoBehaviour {
 		Screen.lockCursor = false;
 		isTouched = false;
 		rigidbody2D.gravityScale = 1.0f;
-	}
-
-	void OnMouseEnter()
-	{
-		isMouseOver = true;
-	}
-
-	void OnMouseExit()
-	{
-		isMouseOver = false;
-	}
-
-	void SetHighlighted(bool highlight)
-	{
-		if(highlight)
-		{
-			renderer.material.color = Color.red;
-		}
-		else
-			renderer.material.color = Color.white;
 	}
 }

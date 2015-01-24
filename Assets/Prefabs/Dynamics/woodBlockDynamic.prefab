@@ -12,6 +12,7 @@ GameObject:
   - 61: {fileID: 6171864}
   - 50: {fileID: 5016380}
   - 114: {fileID: 11416380}
+  - 114: {fileID: 11462966}
   m_Layer: 0
   m_Name: woodBlockDynamic
   m_TagString: Untagged
@@ -66,6 +67,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1de7e3910300fd44084f2222173a7349, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11462966
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 171864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 520c230eae20cd74193a41d952d43d1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &21271864

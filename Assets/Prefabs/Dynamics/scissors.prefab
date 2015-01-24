@@ -11,6 +11,7 @@ GameObject:
   - 212: {fileID: 21242114}
   - 114: {fileID: 11442114}
   - 60: {fileID: 6042114}
+  - 114: {fileID: 11442254}
   m_Layer: 0
   m_Name: scissors
   m_TagString: Untagged
@@ -86,6 +87,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button_on: {fileID: 21300018, guid: 3e23d0eefe8bb9447bcc5be14b1b37a4, type: 3}
   button_off: {fileID: 21300016, guid: 3e23d0eefe8bb9447bcc5be14b1b37a4, type: 3}
+  stringOwner: {fileID: 0}
+--- !u!114 &11442254
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 142114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 520c230eae20cd74193a41d952d43d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &21242114
 SpriteRenderer:
   m_ObjectHideFlags: 1

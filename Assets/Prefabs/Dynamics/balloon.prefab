@@ -12,6 +12,7 @@ GameObject:
   - 60: {fileID: 6066502}
   - 50: {fileID: 5066502}
   - 114: {fileID: 11466502}
+  - 114: {fileID: 11416300}
   m_Layer: 0
   m_Name: balloon
   m_TagString: Untagged
@@ -89,6 +90,17 @@ PolygonCollider2D:
       - {x: .170000002, y: -1.14499998}
       - {x: .100000001, y: -.735000014}
       - {x: .0799999982, y: -.735000014}
+--- !u!114 &11416300
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 166502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 520c230eae20cd74193a41d952d43d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11466502
 MonoBehaviour:
   m_ObjectHideFlags: 1
