@@ -5,7 +5,9 @@ using System.Collections;
 public class Touchable : MonoBehaviour {
 
 	bool isTouched;
-	Rigidbody2D rigidbody;
+
+	[SerializeField()]
+	float moveSpeed = 0.5f;
 
 	// Use this for initialization
 	void Start () {
@@ -15,8 +17,25 @@ public class Touchable : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
-		isTouched = Input.GetMouseButtonDown(0);
+		if(isTouched)
+		{
+			Vector2 mousePosition = Camera.main.ScreenToWorldPoint (Input.mousePosition);
+			var objectPos = Vector2.MoveTowards(transform.position, mousePosition, moveSpeed * Time.deltaTime);
+			rigidbody2D.MovePosition(objectPos);
+		}
+	}
 
-		//rigidbody
+	void OnMouseDown()
+	{
+		isTouched = true;
+		rigidbody2D.gravityScale = 0.0f;
+		rigidbody2D.velocity = Vector2.zero;
+		rigidbody2D.angularVelocity = 0.0f;
+	}
+
+	void OnMouseUp()
+	{
+		isTouched = false;
+		rigidbody2D.gravityScale = 1.0f;
 	}
 }
