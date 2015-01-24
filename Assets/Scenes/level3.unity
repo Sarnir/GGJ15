@@ -165,6 +165,10 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 1.69312501
       objectReference: {fileID: 0}
+    - target: {fileID: 140226, guid: a2384c1e093b21e439652029876c85e0, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a2384c1e093b21e439652029876c85e0, type: 2}
   m_RootGameObject: {fileID: 2091572735}
@@ -209,6 +213,7 @@ GameObject:
   - 212: {fileID: 621056093}
   - 50: {fileID: 621056092}
   - 60: {fileID: 621056091}
+  - 114: {fileID: 621056096}
   - 114: {fileID: 621056095}
   m_Layer: 0
   m_Name: cat
@@ -305,6 +310,18 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 621056090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a4ba4e4191705f4a954d507080d3b9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &621056096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11414126, guid: cb563aaa647f36746b888fb9919dc8f9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1289134047}
   m_GameObject: {fileID: 621056090}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -518,7 +535,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35a9bb4bd0686854cae40e897c795e95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camera: {fileID: 1446867222}
 --- !u!1001 &1135312508
 Prefab:
   m_ObjectHideFlags: 0

@@ -1,17 +1,20 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class LevelController : MonoBehaviour
+public class GameOverHandler : MonoBehaviour
 {
+	public int LevelId;
+
 	void Start ()
 	{
+	
 	}
 	
 	void Update ()
 	{
 		if (Input.GetKey(KeyCode.Return))
 		{
-			Application.LoadLevel(Application.loadedLevel + 1);
+			Application.LoadLevel(0);
 		}
-    }
+	}
 }
