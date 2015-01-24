@@ -223,7 +223,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
-  m_GravityScale: .00999999978
+  m_GravityScale: .5
   m_FixedAngle: 0
   m_IsKinematic: 0
   m_Interpolate: 1
@@ -684,7 +684,7 @@ Rigidbody2D:
   m_GravityScale: 1
   m_FixedAngle: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
 --- !u!212 &1417498676
@@ -809,6 +809,10 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 1.41571271
       objectReference: {fileID: 0}
+    - target: {fileID: 410426, guid: b727e4875f9976d49b9bf6f0e41cbefa, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1.60944414
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b727e4875f9976d49b9bf6f0e41cbefa, type: 2}
   m_RootGameObject: {fileID: 1716439907}
@@ -839,7 +843,7 @@ Transform:
   m_GameObject: {fileID: 1716439907}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.19000006, y: 1.50999999, z: 0}
-  m_LocalScale: {x: 1.41571271, y: 1.58749986, z: 1}
+  m_LocalScale: {x: 1.41571271, y: 1.60944414, z: 1.05537319}
   m_Children: []
   m_Father: {fileID: 1392797759}
   m_RootOrder: 0
@@ -877,7 +881,7 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayerID: 3924017453
+  m_SortingLayerID: 2521559555
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300038, guid: 3e23d0eefe8bb9447bcc5be14b1b37a4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1028,6 +1032,6 @@ Rigidbody2D:
   m_GravityScale: 1
   m_FixedAngle: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
