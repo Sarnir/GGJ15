@@ -7,7 +7,7 @@ public class Touchable : MonoBehaviour {
 	bool isTouched;
 
 	[SerializeField()]
-	float moveSpeed = 0.5f;
+	float moveSpeed = 100.0f;
 
 	// Use this for initialization
 	void Start () {

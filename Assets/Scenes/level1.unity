@@ -248,7 +248,6 @@ GameObject:
   - 212: {fileID: 376061716}
   - 58: {fileID: 376061715}
   - 50: {fileID: 376061714}
-  - 114: {fileID: 376061717}
   m_Layer: 0
   m_Name: Boulder
   m_TagString: Untagged
@@ -316,18 +315,6 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300004, guid: 5c56c88d915395d4188a0ee54013b7be, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!114 &376061717
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 376061712}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1de7e3910300fd44084f2222173a7349, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 2
 --- !u!1 &542759910
 GameObject:
   m_ObjectHideFlags: 0
@@ -336,6 +323,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 542759911}
+  - 114: {fileID: 542759912}
   m_Layer: 0
   m_Name: Level
   m_TagString: Untagged
@@ -357,6 +345,18 @@ Transform:
   - {fileID: 1721973519}
   m_Father: {fileID: 0}
   m_RootOrder: 1
+--- !u!114 &542759912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 542759910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35a9bb4bd0686854cae40e897c795e95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 1810364421}
 --- !u!1 &569772661
 GameObject:
   m_ObjectHideFlags: 0
@@ -685,11 +685,11 @@ PolygonCollider2D:
     m_Paths:
     - - {x: -1.7519871, y: -1.49220681}
       - {x: -1.769297, y: 1.57440174}
-      - {x: -3.93291044, y: 2.55812645}
-      - {x: -4.08636618, y: -3.53431225}
-      - {x: 4.6055088, y: -3.36540461}
-      - {x: 4.32062531, y: 3.09687185}
-      - {x: -3.72094703, y: 2.81663799}
+      - {x: -1.99676239, y: 1.70688927}
+      - {x: -2, y: -1.71500003}
+      - {x: 2, y: -1.71500003}
+      - {x: 1.98389566, y: 1.69483352}
+      - {x: -1.96839941, y: 1.71503675}
       - {x: -1.75834095, y: 1.57655334}
       - {x: 1.68222666, y: 1.53312004}
       - {x: 1.67289066, y: -1.48933554}
