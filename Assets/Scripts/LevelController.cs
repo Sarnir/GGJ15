@@ -3,8 +3,9 @@ using System.Collections;
 
 public class LevelController : MonoBehaviour
 {
-	public GameObject levelClear;
+	public GameObject levelClearPrefab;
 
+	private GameObject levelClear;
 	const float slowmoScale = 0.1f;
 	const float normalScale = 1.0f;
 	const float shiftSpeed = 2.0f;
@@ -14,6 +15,7 @@ public class LevelController : MonoBehaviour
 
 	void Start ()
 	{
+		levelClear = Instantiate(levelClearPrefab) as GameObject;
 		levelClear.SetActive(false);
 		Screen.lockCursor = false;
 
@@ -28,7 +30,6 @@ public class LevelController : MonoBehaviour
 	IEnumerator CheckIfLevelCleared()
 	{
 		Rigidbody2D[] physicObjects = FindObjectsOfType(typeof(Rigidbody2D)) as Rigidbody2D[];
-		bool allSleeping = false;
 		
 		while(!levelCleared)
 		{
@@ -57,7 +58,7 @@ public class LevelController : MonoBehaviour
 		{
 			levelClear.SetActive(true);
 		}
-		if (Input.GetKey(KeyCode.Return) || levelCleared)
+		if (levelCleared && Input.GetKey(KeyCode.Return))
 		{
 			Application.LoadLevel(Application.loadedLevel + 1);
 		}
