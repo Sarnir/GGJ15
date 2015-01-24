@@ -11,6 +11,7 @@ GameObject:
   - 212: {fileID: 21283248}
   - 58: {fileID: 5883248}
   - 50: {fileID: 5083248}
+  - 60: {fileID: 6009942}
   m_Layer: 0
   m_Name: stone
   m_TagString: Untagged
@@ -25,7 +26,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 183248}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .448435485, y: 2.67326021, z: 0}
+  m_LocalPosition: {x: -3.71226883, y: 4.81806755, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -51,11 +52,44 @@ CircleCollider2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 183248}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Radius: .716056406
   m_Center: {x: 0, y: 0}
+--- !u!60 &6009942
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 183248}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Poly:
+    m_Paths:
+    - - {x: .589535713, y: -.460892677}
+      - {x: .763178587, y: -.206321716}
+      - {x: .674499989, y: -.103607178}
+      - {x: .742714405, y: .262285709}
+      - {x: .616821527, y: .334071636}
+      - {x: .475892782, y: .565000057}
+      - {x: .246821642, y: .617714405}
+      - {x: .0409283638, y: .751357079}
+      - {x: -.0968208313, y: .69407177}
+      - {x: -.399535656, y: .667714596}
+      - {x: -.512249947, y: .501357079}
+      - {x: -.769999981, y: .424535751}
+      - {x: -.776821136, y: -.213607311}
+      - {x: -.67589283, y: -.424535751}
+      - {x: -.50907135, y: -.504535675}
+      - {x: -.512714386, y: -.671821594}
+      - {x: -.264429092, y: -.643606663}
+      - {x: -.239999771, y: -.737714291}
+      - {x: .169535637, y: -.730892658}
+      - {x: .215428352, y: -.63407135}
+      - {x: .446821451, y: -.644071579}
+      - {x: .536357164, y: -.474071503}
 --- !u!212 &21283248
 SpriteRenderer:
   m_ObjectHideFlags: 1

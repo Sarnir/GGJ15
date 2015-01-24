@@ -3,8 +3,6 @@ using System.Collections;
 
 public class GameOverHandler : MonoBehaviour
 {
-	public int LevelId;
-
 	void Start ()
 	{
 	
@@ -16,6 +14,11 @@ public class GameOverHandler : MonoBehaviour
 		{
 			Screen.lockCursor = false;
 			Application.LoadLevel(PlayerPrefs.GetInt("LastLevel"));
+		}
+		else if (Input.GetKey(KeyCode.Return))
+		{
+			Screen.lockCursor = false;
+			Application.LoadLevel(PlayerPrefs.GetInt("menu"));
 		}
 	}
 }

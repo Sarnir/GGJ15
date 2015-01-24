@@ -151,7 +151,7 @@ Transform:
   - {fileID: 1392797759}
   m_Father: {fileID: 1327080847}
   m_RootOrder: 0
---- !u!1001 &912235088
+--- !u!1001 &717552665
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -199,13 +199,14 @@ Prefab:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 183248, guid: d1240c7341feea64cb81c82aabdc00d7, type: 2}
-  m_PrefabInternal: {fileID: 912235088}
+  m_PrefabInternal: {fileID: 717552665}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 990501423}
   - 212: {fileID: 990501422}
   - 58: {fileID: 990501421}
   - 50: {fileID: 990501420}
+  - 60: {fileID: 990501424}
   m_Layer: 0
   m_Name: stone
   m_TagString: Untagged
@@ -218,7 +219,7 @@ Rigidbody2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 5083248, guid: d1240c7341feea64cb81c82aabdc00d7,
     type: 2}
-  m_PrefabInternal: {fileID: 912235088}
+  m_PrefabInternal: {fileID: 717552665}
   m_GameObject: {fileID: 990501419}
   m_Mass: 1
   m_LinearDrag: 0
@@ -234,9 +235,9 @@ CircleCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 5883248, guid: d1240c7341feea64cb81c82aabdc00d7,
     type: 2}
-  m_PrefabInternal: {fileID: 912235088}
+  m_PrefabInternal: {fileID: 717552665}
   m_GameObject: {fileID: 990501419}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Radius: .716056406
@@ -246,7 +247,7 @@ SpriteRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 21283248, guid: d1240c7341feea64cb81c82aabdc00d7,
     type: 2}
-  m_PrefabInternal: {fileID: 912235088}
+  m_PrefabInternal: {fileID: 717552665}
   m_GameObject: {fileID: 990501419}
   m_Enabled: 1
   m_CastShadows: 0
@@ -268,7 +269,7 @@ SpriteRenderer:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 483248, guid: d1240c7341feea64cb81c82aabdc00d7, type: 2}
-  m_PrefabInternal: {fileID: 912235088}
+  m_PrefabInternal: {fileID: 717552665}
   m_GameObject: {fileID: 990501419}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.71226883, y: 4.81806755, z: 0}
@@ -276,6 +277,40 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1183601306}
   m_RootOrder: 2
+--- !u!60 &990501424
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6009942, guid: d1240c7341feea64cb81c82aabdc00d7,
+    type: 2}
+  m_PrefabInternal: {fileID: 717552665}
+  m_GameObject: {fileID: 990501419}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Poly:
+    m_Paths:
+    - - {x: .589535713, y: -.460892677}
+      - {x: .763178587, y: -.206321716}
+      - {x: .674499989, y: -.103607178}
+      - {x: .742714405, y: .262285709}
+      - {x: .616821527, y: .334071636}
+      - {x: .475892782, y: .565000057}
+      - {x: .246821642, y: .617714405}
+      - {x: .0409283638, y: .751357079}
+      - {x: -.0968208313, y: .69407177}
+      - {x: -.399535656, y: .667714596}
+      - {x: -.512249947, y: .501357079}
+      - {x: -.769999981, y: .424535751}
+      - {x: -.776821136, y: -.213607311}
+      - {x: -.67589283, y: -.424535751}
+      - {x: -.50907135, y: -.504535675}
+      - {x: -.512714386, y: -.671821594}
+      - {x: -.264429092, y: -.643606663}
+      - {x: -.239999771, y: -.737714291}
+      - {x: .169535637, y: -.730892658}
+      - {x: .215428352, y: -.63407135}
+      - {x: .446821451, y: -.644071579}
+      - {x: .536357164, y: -.474071503}
 --- !u!1 &1183601305
 GameObject:
   m_ObjectHideFlags: 0
@@ -969,6 +1004,7 @@ GameObject:
   - 61: {fileID: 2074658429}
   - 50: {fileID: 2074658433}
   - 114: {fileID: 2074658432}
+  - 114: {fileID: 2074658434}
   m_Layer: 0
   m_Name: woodBlockDynamic
   m_TagString: Untagged
@@ -1051,3 +1087,15 @@ Rigidbody2D:
   m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 1
+--- !u!114 &2074658434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11462966, guid: 2926406945ae02142858ab6ce0bbb5a4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1222706040}
+  m_GameObject: {fileID: 2074658428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 520c230eae20cd74193a41d952d43d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
