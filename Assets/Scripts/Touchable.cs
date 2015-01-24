@@ -3,14 +3,20 @@ using System.Collections;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class Touchable : MonoBehaviour {
-
-	const float maxSpeed = 2000.0f;
+	
 	bool isTouched;
+
+	[SerializeField()]
+	GameObject cursorSpritePrefab;
+
+	GameObject cursorSprite;
 
 	// Use this for initialization
 	void Start ()
 	{
 		isTouched = false;
+		cursorSprite = Instantiate(cursorSpritePrefab) as GameObject;
+		cursorSprite.SetActive(false);
 	}
 
 	public bool IsTouched()
@@ -33,6 +39,10 @@ public class Touchable : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
+		if(isTouched)
+		{
+			cursorSprite.transform.position = transform.position;
+		}
 	}
 
 	Vector2 GetMousePosition()
@@ -42,6 +52,7 @@ public class Touchable : MonoBehaviour {
 
 	void OnMouseDown()
 	{
+		cursorSprite.SetActive(true);
 		Screen.lockCursor = true;
 		isTouched = true;
 		rigidbody2D.gravityScale = 0.0f;
@@ -51,6 +62,7 @@ public class Touchable : MonoBehaviour {
 
 	void OnMouseUp()
 	{
+		cursorSprite.SetActive(false);
 		Screen.lockCursor = false;
 		isTouched = false;
 		rigidbody2D.gravityScale = 1.0f;

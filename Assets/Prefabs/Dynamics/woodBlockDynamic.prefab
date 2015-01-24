@@ -11,8 +11,8 @@ GameObject:
   - 212: {fileID: 21271864}
   - 61: {fileID: 6171864}
   - 50: {fileID: 5016380}
-  - 114: {fileID: 11416380}
   - 114: {fileID: 11462966}
+  - 114: {fileID: 11476524}
   m_Layer: 0
   m_Name: woodBlockDynamic
   m_TagString: Untagged
@@ -58,17 +58,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: 1.79709983, y: .935228288}
   m_Center: {x: .0110686636, y: 2.40716446e-07}
---- !u!114 &11416380
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 171864}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1de7e3910300fd44084f2222173a7349, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &11462966
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -80,6 +69,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 520c230eae20cd74193a41d952d43d1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11476524
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 171864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1de7e3910300fd44084f2222173a7349, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorSpritePrefab: {fileID: 0}
 --- !u!212 &21271864
 SpriteRenderer:
   m_ObjectHideFlags: 1

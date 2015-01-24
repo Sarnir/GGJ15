@@ -2,7 +2,8 @@ fileFormatVersion: 2
 guid: 1de7e3910300fd44084f2222173a7349
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - cursorSpritePrefab: {fileID: 131642, guid: 39d58a3b652af994e89bc3b9e3762568, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
