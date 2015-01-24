@@ -3,6 +3,8 @@ using System.Collections;
 
 public class LevelController : MonoBehaviour
 {
+	public GameObject levelClear;
+
 	const float slowmoScale = 0.1f;
 	const float normalScale = 1.0f;
 	const float shiftSpeed = 2.0f;
@@ -12,6 +14,7 @@ public class LevelController : MonoBehaviour
 
 	void Start ()
 	{
+		levelClear.SetActive(false);
 		Screen.lockCursor = false;
 
 		Time.timeScale = normalScale;
@@ -50,6 +53,10 @@ public class LevelController : MonoBehaviour
 	
 	void Update ()
 	{
+		if (levelCleared)
+		{
+			levelClear.SetActive(true);
+		}
 		if (Input.GetKey(KeyCode.Return) || levelCleared)
 		{
 			Application.LoadLevel(Application.loadedLevel + 1);

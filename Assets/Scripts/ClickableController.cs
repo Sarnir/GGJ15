@@ -5,6 +5,8 @@ public class ClickableController : MonoBehaviour
 {
 	public Sprite button_on;
 	public Sprite button_off;
+	public GameObject stringOwner;
+
 	private SpriteRenderer sr;
 
 	void Start ()
@@ -14,12 +16,12 @@ public class ClickableController : MonoBehaviour
 
 	void Update ()
 	{
-	
 	}
 
 	void OnMouseDown()
 	{
 		sr.sprite = button_on;
+		Destroy(stringOwner.GetComponent<DistanceJoint2D>());
 	}
 
 	void OnMouseUp()

@@ -53,6 +53,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 450764}
+  - 114: {fileID: 11438876}
   m_Layer: 0
   m_Name: Level
   m_TagString: Untagged
@@ -111,6 +112,18 @@ Transform:
   - {fileID: 450762}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &11438876
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 150764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35a9bb4bd0686854cae40e897c795e95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelClear: {fileID: 133102, guid: 7483e54af06c14d429de062ea6a0d333, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
