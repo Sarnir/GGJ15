@@ -13,6 +13,6 @@ public class playButton : MonoBehaviour
 
 	void OnMouseUp()
 	{
-		Application.LoadLevel(0);
+		Application.LoadLevel(1);
 	}
 }

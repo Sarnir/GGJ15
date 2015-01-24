@@ -1106,7 +1106,6 @@ GameObject:
   - 50: {fileID: 2074658433}
   - 114: {fileID: 2074658434}
   - 114: {fileID: 2074658432}
-  - 114: {fileID: 2074658434}
   m_Layer: 0
   m_Name: woodBlockDynamic
   m_TagString: Untagged

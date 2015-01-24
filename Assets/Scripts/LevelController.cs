@@ -6,6 +6,7 @@ public class LevelController : MonoBehaviour
 	public GameObject levelClearPrefab;
 
 	private GameObject levelClear;
+	private int lastLevel = 11;
 	const float slowmoScale = 0.1f;
 	const float normalScale = 1.0f;
 	const float shiftSpeed = 2.0f;
@@ -60,7 +61,10 @@ public class LevelController : MonoBehaviour
 		}
 		if (levelCleared && Input.GetKey(KeyCode.Return))
 		{
-			Application.LoadLevel(Application.loadedLevel + 1);
+			if (Application.loadedLevel == lastLevel)
+				Application.LoadLevel("endGame");
+			else
+				Application.LoadLevel(Application.loadedLevel + 1);
 		}
 		else if (Input.GetKey(KeyCode.Escape))
 		{
