@@ -363,7 +363,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1de7e3910300fd44084f2222173a7349, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
 --- !u!50 &569772664
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -612,64 +611,6 @@ Transform:
   - {fileID: 1799934159}
   m_Father: {fileID: 760910997}
   m_RootOrder: 0
---- !u!1 &1702313319
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1702313321}
-  - 61: {fileID: 1702313322}
-  - 114: {fileID: 1702313320}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1702313320
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1702313319}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: faa91f760f161694999376c2f8af01a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  goOczko: {fileID: 105690, guid: d9e55f7ab5fce4e40b27ef9e3a29c13c, type: 2}
-  dlugoscLancucha: 3
-  dlugoscOczka: .100000001
-  szerokoscOczka: .200000003
-  v3KoniecLiny: {x: 0, y: 0, z: 0}
-  transKoniecLiny: {fileID: 0}
-  listaOczek: []
---- !u!4 &1702313321
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1702313319}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.77999997, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
---- !u!61 &1702313322
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1702313319}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Size: {x: 1, y: 1}
-  m_Center: {x: 0, y: 0}
 --- !u!1 &1721973518
 GameObject:
   m_ObjectHideFlags: 0
@@ -712,11 +653,11 @@ PolygonCollider2D:
     m_Paths:
     - - {x: -1.7519871, y: -1.49220681}
       - {x: -1.769297, y: 1.57440174}
-      - {x: -3.93291044, y: 2.55812645}
-      - {x: -4.08636618, y: -3.53431225}
-      - {x: 4.6055088, y: -3.36540461}
-      - {x: 4.32062531, y: 3.09687185}
-      - {x: -3.72094703, y: 2.81663799}
+      - {x: -1.97496235, y: 1.70845091}
+      - {x: -2.01759052, y: -1.72413373}
+      - {x: 2.01953959, y: -1.72146726}
+      - {x: 2.04866672, y: 1.73000264}
+      - {x: -1.96618223, y: 1.72683668}
       - {x: -1.75834095, y: 1.57655334}
       - {x: 1.68222666, y: 1.53312004}
       - {x: 1.67289066, y: -1.48933554}
@@ -754,7 +695,7 @@ GameObject:
   - 58: {fileID: 1799934161}
   - 50: {fileID: 1799934160}
   m_Layer: 0
-  m_Name: Boulder
+  m_Name: boulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

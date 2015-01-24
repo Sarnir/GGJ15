@@ -4,13 +4,12 @@ using System.Collections;
 [RequireComponent(typeof(Rigidbody2D))]
 public class Touchable : MonoBehaviour {
 
+	float moveSpeed = 100.0f;
 	bool isTouched;
 
-	[SerializeField()]
-	float moveSpeed = 0.5f;
-
 	// Use this for initialization
-	void Start () {
+	void Start ()
+	{
 		isTouched = false;
 	}
 	
@@ -19,14 +18,19 @@ public class Touchable : MonoBehaviour {
 	{
 		if(isTouched)
 		{
-			Vector2 mousePosition = Camera.main.ScreenToWorldPoint (Input.mousePosition);
-			var objectPos = Vector2.MoveTowards(transform.position, mousePosition, moveSpeed * Time.deltaTime);
-			rigidbody2D.MovePosition(objectPos);
+			var force = new Vector2(Input.GetAxis("Mouse X") / Time.deltaTime, Input.GetAxis("Mouse Y") / Time.deltaTime);
+			rigidbody2D.AddForce(force);
 		}
+	}
+
+	Vector2 GetMousePosition()
+	{
+		return Camera.main.ScreenToWorldPoint (Input.mousePosition);
 	}
 
 	void OnMouseDown()
 	{
+		Screen.lockCursor = true;
 		isTouched = true;
 		rigidbody2D.gravityScale = 0.0f;
 		rigidbody2D.velocity = Vector2.zero;
@@ -35,6 +39,7 @@ public class Touchable : MonoBehaviour {
 
 	void OnMouseUp()
 	{
+		Screen.lockCursor = false;
 		isTouched = false;
 		rigidbody2D.gravityScale = 1.0f;
 	}
