@@ -312,7 +312,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35a9bb4bd0686854cae40e897c795e95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelClear: {fileID: 133102, guid: 7483e54af06c14d429de062ea6a0d333, type: 2}
+  levelClearPrefab: {fileID: 175090, guid: 7483e54af06c14d429de062ea6a0d333, type: 2}
 --- !u!1001 &618589665
 Prefab:
   m_ObjectHideFlags: 0
@@ -369,6 +369,7 @@ GameObject:
   - 60: {fileID: 627197779}
   - 50: {fileID: 627197778}
   - 114: {fileID: 627197777}
+  - 114: {fileID: 627197782}
   m_Layer: 0
   m_Name: balloon
   m_TagString: Untagged
@@ -483,6 +484,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1241300654}
   m_RootOrder: 2
+--- !u!114 &627197782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11416300, guid: 0e2f5cbc3f270f7409ea8af84d70cbf3,
+    type: 2}
+  m_PrefabInternal: {fileID: 1882323261}
+  m_GameObject: {fileID: 627197776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 520c230eae20cd74193a41d952d43d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &722091157
 Prefab:
   m_ObjectHideFlags: 0
@@ -1017,6 +1030,7 @@ GameObject:
   - 60: {fileID: 1468354257}
   - 50: {fileID: 1468354256}
   - 114: {fileID: 1468354255}
+  - 114: {fileID: 1468354260}
   m_Layer: 0
   m_Name: balloon
   m_TagString: Untagged
@@ -1131,6 +1145,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1241300654}
   m_RootOrder: 1
+--- !u!114 &1468354260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11416300, guid: 0e2f5cbc3f270f7409ea8af84d70cbf3,
+    type: 2}
+  m_PrefabInternal: {fileID: 931638017}
+  m_GameObject: {fileID: 1468354254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 520c230eae20cd74193a41d952d43d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1500752907
 GameObject:
   m_ObjectHideFlags: 0
@@ -1180,7 +1206,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: .192156866, g: .301960796, b: .474509805, a: .0196078438}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: .0196078438}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -1383,6 +1409,7 @@ GameObject:
   - 212: {fileID: 1853852930}
   - 61: {fileID: 1853852929}
   - 50: {fileID: 1853852928}
+  - 114: {fileID: 1853852927}
   m_Layer: 8
   m_Name: plankDynamic
   m_TagString: Untagged
@@ -1390,6 +1417,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1853852927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11461806, guid: f3b0ddb0b0c864844a23705cfd842ea3,
+    type: 2}
+  m_PrefabInternal: {fileID: 150547971}
+  m_GameObject: {fileID: 1853852926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 520c230eae20cd74193a41d952d43d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!50 &1853852928
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -1405,7 +1444,7 @@ Rigidbody2D:
   m_IsKinematic: 0
   m_Interpolate: 1
   m_SleepingMode: 1
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
 --- !u!61 &1853852929
 BoxCollider2D:
   m_ObjectHideFlags: 0

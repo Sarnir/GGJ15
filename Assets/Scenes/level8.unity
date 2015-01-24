@@ -224,6 +224,7 @@ GameObject:
   - 212: {fileID: 39065256}
   - 61: {fileID: 39065255}
   - 50: {fileID: 39065254}
+  - 114: {fileID: 39065253}
   - 233: {fileID: 39065252}
   m_Layer: 0
   m_Name: plankDynamic
@@ -251,6 +252,18 @@ HingeJoint2D:
   m_AngleLimits:
     m_LowerAngle: 0
     m_UpperAngle: 359
+--- !u!114 &39065253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11461806, guid: f3b0ddb0b0c864844a23705cfd842ea3,
+    type: 2}
+  m_PrefabInternal: {fileID: 406936328}
+  m_GameObject: {fileID: 39065251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 520c230eae20cd74193a41d952d43d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!50 &39065254
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -266,7 +279,7 @@ Rigidbody2D:
   m_IsKinematic: 0
   m_Interpolate: 1
   m_SleepingMode: 1
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
 --- !u!61 &39065255
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1587,7 +1600,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: .192156866, g: .301960796, b: .474509805, a: .0196078438}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: .0196078438}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -1677,6 +1690,7 @@ GameObject:
   - 212: {fileID: 1204481512}
   - 61: {fileID: 1204481511}
   - 50: {fileID: 1204481510}
+  - 114: {fileID: 1204481509}
   - 233: {fileID: 1204481514}
   m_Layer: 0
   m_Name: plankDynamic
@@ -1685,6 +1699,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1204481509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11461806, guid: f3b0ddb0b0c864844a23705cfd842ea3,
+    type: 2}
+  m_PrefabInternal: {fileID: 573390648}
+  m_GameObject: {fileID: 1204481508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 520c230eae20cd74193a41d952d43d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!50 &1204481510
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -1700,7 +1726,7 @@ Rigidbody2D:
   m_IsKinematic: 0
   m_Interpolate: 1
   m_SleepingMode: 1
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
 --- !u!61 &1204481511
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1778,6 +1804,7 @@ GameObject:
   - 212: {fileID: 1322277889}
   - 61: {fileID: 1322277888}
   - 50: {fileID: 1322277887}
+  - 114: {fileID: 1322277886}
   - 233: {fileID: 1322277885}
   m_Layer: 0
   m_Name: plankDynamic
@@ -1805,6 +1832,18 @@ HingeJoint2D:
   m_AngleLimits:
     m_LowerAngle: 0
     m_UpperAngle: 359
+--- !u!114 &1322277886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11461806, guid: f3b0ddb0b0c864844a23705cfd842ea3,
+    type: 2}
+  m_PrefabInternal: {fileID: 1625311142}
+  m_GameObject: {fileID: 1322277884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 520c230eae20cd74193a41d952d43d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!50 &1322277887
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -1820,7 +1859,7 @@ Rigidbody2D:
   m_IsKinematic: 0
   m_Interpolate: 1
   m_SleepingMode: 1
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
 --- !u!61 &1322277888
 BoxCollider2D:
   m_ObjectHideFlags: 0

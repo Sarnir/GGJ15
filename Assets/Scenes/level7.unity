@@ -346,7 +346,7 @@ Rigidbody2D:
   m_IsKinematic: 0
   m_Interpolate: 1
   m_SleepingMode: 1
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
 --- !u!61 &278180545
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -443,7 +443,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: .192156866, g: .301960796, b: .474509805, a: .0196078438}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: .0196078438}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -611,7 +611,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35a9bb4bd0686854cae40e897c795e95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelClear: {fileID: 175090, guid: 7483e54af06c14d429de062ea6a0d333, type: 2}
+  levelClearPrefab: {fileID: 175090, guid: 7483e54af06c14d429de062ea6a0d333, type: 2}
 --- !u!1001 &479010046
 Prefab:
   m_ObjectHideFlags: 0
@@ -716,6 +716,7 @@ GameObject:
   - 60: {fileID: 511331449}
   - 50: {fileID: 511331448}
   - 114: {fileID: 511331447}
+  - 114: {fileID: 511331452}
   m_Layer: 8
   m_Name: balloon
   m_TagString: Untagged
@@ -830,6 +831,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1410779576}
   m_RootOrder: 5
+--- !u!114 &511331452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11416300, guid: 0e2f5cbc3f270f7409ea8af84d70cbf3,
+    type: 2}
+  m_PrefabInternal: {fileID: 1956452457}
+  m_GameObject: {fileID: 511331446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 520c230eae20cd74193a41d952d43d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &625021712
 GameObject:
   m_ObjectHideFlags: 0
@@ -989,6 +1002,7 @@ GameObject:
   - 60: {fileID: 660555185}
   - 50: {fileID: 660555184}
   - 114: {fileID: 660555183}
+  - 114: {fileID: 660555188}
   m_Layer: 8
   m_Name: balloon
   m_TagString: Untagged
@@ -1103,6 +1117,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1410779576}
   m_RootOrder: 6
+--- !u!114 &660555188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11416300, guid: 0e2f5cbc3f270f7409ea8af84d70cbf3,
+    type: 2}
+  m_PrefabInternal: {fileID: 1862242181}
+  m_GameObject: {fileID: 660555182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 520c230eae20cd74193a41d952d43d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &674991144
 GameObject:
   m_ObjectHideFlags: 0
@@ -1115,6 +1141,7 @@ GameObject:
   - 60: {fileID: 674991147}
   - 50: {fileID: 674991146}
   - 114: {fileID: 674991145}
+  - 114: {fileID: 674991150}
   m_Layer: 8
   m_Name: balloon
   m_TagString: Untagged
@@ -1229,6 +1256,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1410779576}
   m_RootOrder: 1
+--- !u!114 &674991150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11416300, guid: 0e2f5cbc3f270f7409ea8af84d70cbf3,
+    type: 2}
+  m_PrefabInternal: {fileID: 235326148}
+  m_GameObject: {fileID: 674991144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 520c230eae20cd74193a41d952d43d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &720647899
 GameObject:
   m_ObjectHideFlags: 0
@@ -1325,6 +1364,7 @@ GameObject:
   - 60: {fileID: 894334314}
   - 50: {fileID: 894334313}
   - 114: {fileID: 894334312}
+  - 114: {fileID: 894334317}
   m_Layer: 8
   m_Name: balloon
   m_TagString: Untagged
@@ -1439,6 +1479,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1410779576}
   m_RootOrder: 7
+--- !u!114 &894334317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11416300, guid: 0e2f5cbc3f270f7409ea8af84d70cbf3,
+    type: 2}
+  m_PrefabInternal: {fileID: 479010046}
+  m_GameObject: {fileID: 894334311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 520c230eae20cd74193a41d952d43d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1410779575
 GameObject:
   m_ObjectHideFlags: 0
@@ -1650,6 +1702,7 @@ GameObject:
   - 60: {fileID: 1830685074}
   - 50: {fileID: 1830685073}
   - 114: {fileID: 1830685072}
+  - 114: {fileID: 1830685077}
   m_Layer: 8
   m_Name: balloon
   m_TagString: Untagged
@@ -1764,6 +1817,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1410779576}
   m_RootOrder: 4
+--- !u!114 &1830685077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11416300, guid: 0e2f5cbc3f270f7409ea8af84d70cbf3,
+    type: 2}
+  m_PrefabInternal: {fileID: 2134648929}
+  m_GameObject: {fileID: 1830685071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 520c230eae20cd74193a41d952d43d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1841082286
 Prefab:
   m_ObjectHideFlags: 0
@@ -1811,8 +1876,13 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 1.44546044
       objectReference: {fileID: 0}
+    - target: {fileID: 11461806, guid: f3b0ddb0b0c864844a23705cfd842ea3, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11488804, guid: f3b0ddb0b0c864844a23705cfd842ea3, type: 2}
+    - {fileID: 11461806, guid: f3b0ddb0b0c864844a23705cfd842ea3, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: f3b0ddb0b0c864844a23705cfd842ea3, type: 2}
   m_RootGameObject: {fileID: 278180542}
   m_IsPrefabParent: 0
@@ -1925,6 +1995,7 @@ GameObject:
   - 60: {fileID: 1994809539}
   - 50: {fileID: 1994809538}
   - 114: {fileID: 1994809537}
+  - 114: {fileID: 1994809542}
   m_Layer: 8
   m_Name: balloon
   m_TagString: Untagged
@@ -2039,6 +2110,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1410779576}
   m_RootOrder: 0
+--- !u!114 &1994809542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11416300, guid: 0e2f5cbc3f270f7409ea8af84d70cbf3,
+    type: 2}
+  m_PrefabInternal: {fileID: 466440413}
+  m_GameObject: {fileID: 1994809536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 520c230eae20cd74193a41d952d43d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2134648929
 Prefab:
   m_ObjectHideFlags: 0
