@@ -4,7 +4,7 @@ using System.Collections;
 public class LevelController : MonoBehaviour
 {
 	const float slowmoScale = 0.1f;
-	const float normalScale = 2.0f;
+	const float normalScale = 1.0f;
 	const float shiftSpeed = 2.0f;
 	bool slowDown;
 	float lerpProgress;
@@ -14,8 +14,9 @@ public class LevelController : MonoBehaviour
 		Screen.lockCursor = false;
 
 		Time.timeScale = normalScale;
-		lerpProgress = 1.0f;
-		slowDown = false;	}
+		lerpProgress = 0.5f;
+		slowDown = true;	
+	}
 	
 	void Update ()
 	{
@@ -34,9 +35,9 @@ public class LevelController : MonoBehaviour
 		}
 
 		if(slowDown)
-			lerpProgress -= Time.deltaTime * shiftSpeed;
+			lerpProgress -= Time.fixedDeltaTime * shiftSpeed;
 		else
-			lerpProgress += Time.deltaTime * shiftSpeed;
+			lerpProgress += Time.fixedDeltaTime * shiftSpeed;
 
 		lerpProgress = Mathf.Clamp(lerpProgress, 0.0f, 1.0f);
 

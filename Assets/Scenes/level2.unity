@@ -188,7 +188,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 483248, guid: d1240c7341feea64cb81c82aabdc00d7, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d1240c7341feea64cb81c82aabdc00d7, type: 2}
@@ -223,7 +223,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
-  m_GravityScale: .00999999978
+  m_GravityScale: 1
   m_FixedAngle: 0
   m_IsKinematic: 0
   m_Interpolate: 1
@@ -275,7 +275,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 1
 --- !u!1 &1183601305
 GameObject:
   m_ObjectHideFlags: 0
@@ -302,6 +302,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1417498673}
+  - {fileID: 2074658431}
   m_Father: {fileID: 627924159}
   m_RootOrder: 0
 --- !u!1001 &1222706040
@@ -309,15 +310,15 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1183601306}
     m_Modifications:
     - target: {fileID: 471864, guid: 2926406945ae02142858ab6ce0bbb5a4, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 4.90999985
+      value: 5.42005062
       objectReference: {fileID: 0}
     - target: {fileID: 471864, guid: 2926406945ae02142858ab6ce0bbb5a4, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.54999995
+      value: 1.64806557
       objectReference: {fileID: 0}
     - target: {fileID: 471864, guid: 2926406945ae02142858ab6ce0bbb5a4, type: 2}
       propertyPath: m_LocalPosition.z
@@ -341,7 +342,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 471864, guid: 2926406945ae02142858ab6ce0bbb5a4, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5016380, guid: 2926406945ae02142858ab6ce0bbb5a4, type: 2}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5016380, guid: 2926406945ae02142858ab6ce0bbb5a4, type: 2}
+      propertyPath: m_Interpolate
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2926406945ae02142858ab6ce0bbb5a4, type: 2}
@@ -461,7 +470,7 @@ Transform:
   - {fileID: 627924159}
   - {fileID: 1395258649}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
 --- !u!114 &1327080848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -998,11 +1007,11 @@ Transform:
   m_PrefabInternal: {fileID: 1222706040}
   m_GameObject: {fileID: 2074658428}
   m_LocalRotation: {x: 0, y: 0, z: .707106829, w: .707106829}
-  m_LocalPosition: {x: 4.90999985, y: -1.54999995, z: 0}
+  m_LocalPosition: {x: 5.42005062, y: 1.64806557, z: 0}
   m_LocalScale: {x: 1.48823905, y: 1.48568106, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_Father: {fileID: 1183601306}
+  m_RootOrder: 1
 --- !u!114 &2074658432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1028,6 +1037,6 @@ Rigidbody2D:
   m_GravityScale: 1
   m_FixedAngle: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
