@@ -38,7 +38,7 @@ public class LevelController : MonoBehaviour
 
 			foreach (Rigidbody2D physicObject in physicObjects) 
 			{
-				if(!physicObject.IsSleeping())
+				if(physicObject && !physicObject.IsSleeping())
 				{
 					levelCleared = false;
 					yield return null;
