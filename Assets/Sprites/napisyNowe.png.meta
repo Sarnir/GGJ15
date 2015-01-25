@@ -77,9 +77,9 @@ TextureImporter:
     - name: textFelineMode
       rect:
         serializedVersion: 2
-        x: 4
+        x: 6
         y: 800
-        width: 428
+        width: 439
         height: 98
       alignment: 0
       pivot: {x: .5, y: .5}
