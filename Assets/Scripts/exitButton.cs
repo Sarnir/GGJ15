@@ -15,4 +15,9 @@ public class exitButton : MonoBehaviour
 	{
 		Application.Quit();
 	}
+
+	void OnMouseHover()
+	{
+		audio.Play();
+	}
 }

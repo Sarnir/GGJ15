@@ -30,6 +30,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/level11.unity
   - enabled: 1
+    path: Assets/Scenes/level12.unity
+  - enabled: 1
+    path: Assets/Scenes/level13.unity
+  - enabled: 1
     path: Assets/Scenes/gameOver.unity
   - enabled: 1
     path: Assets/Scenes/endGame.unity
