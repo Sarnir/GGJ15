@@ -4,15 +4,18 @@ using System.Collections;
 public class LevelController : MonoBehaviour
 {
 	public GameObject levelClearPrefab;
+	public GameObject felineEye;
 
 	private GameObject levelClear;
 	private int lastLevel = 11;
 	const float slowmoScale = 0.1f;
 	const float normalScale = 1.0f;
 	const float shiftSpeed = 2.0f;
-	bool slowDown;
+	bool felineModeOn;
 	float lerpProgress;
 	bool levelCleared;
+
+	FelineButtonHandler felineButtonHandler;
 
 	void Start ()
 	{
@@ -22,8 +25,11 @@ public class LevelController : MonoBehaviour
 
 		Time.timeScale = normalScale;
 		lerpProgress = 0.5f;
-		slowDown = true;
+		felineModeOn = true;
 		levelCleared = false;
+
+		felineButtonHandler = felineEye.GetComponent<FelineButtonHandler>();
+		felineButtonHandler.setFelineMode(felineModeOn);
 
 		StartCoroutine(CheckIfLevelCleared());
 	}
@@ -52,6 +58,12 @@ public class LevelController : MonoBehaviour
 			}
 		}
 	}
+
+	void ToggleFelineMode()
+	{
+		felineModeOn = !felineModeOn;
+		felineButtonHandler.setFelineMode(felineModeOn);
+	}
 	
 	void Update ()
 	{
@@ -73,10 +85,12 @@ public class LevelController : MonoBehaviour
 
 		if (Input.GetKeyDown(KeyCode.Space))
 		{
-			slowDown = !slowDown;
+			ToggleFelineMode();
 		}
 
-		if(slowDown)
+		felineModeOn = felineButtonHandler.IsFelineMode();
+
+		if(felineModeOn)
 			lerpProgress -= Time.fixedDeltaTime * shiftSpeed;
 		else
 			lerpProgress += Time.fixedDeltaTime * shiftSpeed;

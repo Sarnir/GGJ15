@@ -1,10 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[RequireComponent(typeof(SpriteRenderer))]
 public class balloonHandler : MonoBehaviour
 {
-	void Start () {
-	
+	[SerializeField()]
+	GameObject balloonPop = null;
+
+	SpriteRenderer spriteRenderer;
+
+	void Start ()
+	{
+		spriteRenderer = GetComponent<SpriteRenderer>();
 	}
 
 	void Update ()
@@ -13,6 +20,8 @@ public class balloonHandler : MonoBehaviour
 
 	void OnMouseDown()
 	{
-		Destroy (gameObject);
+		spriteRenderer.sprite = balloonPop.GetComponent<SpriteRenderer>().sprite;
+		collider2D.enabled = false;
+		Destroy (gameObject, 0.1f);
 	}
 }

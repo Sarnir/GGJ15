@@ -104,6 +104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de4fd0c19d3d3ed4ea28776237f02e9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  balloonPop: {fileID: 175950, guid: 33ee8c9f9846a4d41bc2d5a9627ac9f3, type: 2}
 --- !u!212 &21266502
 SpriteRenderer:
   m_ObjectHideFlags: 1

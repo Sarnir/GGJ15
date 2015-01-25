@@ -2,12 +2,13 @@
 using System.Collections;
 
 [RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(HighlightWhenMouseOver))]
 public class Touchable : MonoBehaviour {
 	
 	bool isTouched;
 
 	[SerializeField()]
-	GameObject cursorSpritePrefab;
+	GameObject cursorSpritePrefab = null;
 
 	GameObject cursorSprite;
 

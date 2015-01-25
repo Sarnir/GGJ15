@@ -221,6 +221,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de4fd0c19d3d3ed4ea28776237f02e9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  balloonPop: {fileID: 175950, guid: 33ee8c9f9846a4d41bc2d5a9627ac9f3, type: 2}
 --- !u!50 &205018300
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -367,7 +368,6 @@ GameObject:
   - 212: {fileID: 278180546}
   - 61: {fileID: 278180545}
   - 50: {fileID: 278180544}
-  - 114: {fileID: 278180543}
   m_Layer: 0
   m_Name: plankDynamic
   m_TagString: Untagged
@@ -375,19 +375,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &278180543
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11464986, guid: f3b0ddb0b0c864844a23705cfd842ea3,
-    type: 2}
-  m_PrefabInternal: {fileID: 1841082286}
-  m_GameObject: {fileID: 278180542}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1de7e3910300fd44084f2222173a7349, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cursorSpritePrefab: {fileID: 131642, guid: 39d58a3b652af994e89bc3b9e3762568, type: 2}
 --- !u!50 &278180544
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -584,7 +571,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 473856, guid: 0879f47b8dd36f34f9ed2240fe09f691, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -5.67999983
+      value: 6.71000004
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0879f47b8dd36f34f9ed2240fe09f691, type: 2}
@@ -725,6 +712,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelClearPrefab: {fileID: 175090, guid: 7483e54af06c14d429de062ea6a0d333, type: 2}
+  felineModeIconPrefab: {fileID: 0}
 --- !u!1001 &479010046
 Prefab:
   m_ObjectHideFlags: 0
@@ -973,6 +961,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 656303439}
   - 212: {fileID: 656303440}
+  - 60: {fileID: 656303443}
+  - 114: {fileID: 656303442}
+  - 114: {fileID: 656303441}
   m_Layer: 0
   m_Name: eye0
   m_TagString: Untagged
@@ -987,7 +978,7 @@ Transform:
   m_PrefabInternal: {fileID: 329295826}
   m_GameObject: {fileID: 656303438}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.67999983, y: 7.92000008, z: 0}
+  m_LocalPosition: {x: 6.71000004, y: 7.92000008, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1410779576}
@@ -1015,6 +1006,57 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300012, guid: b8fb4c437c11d784e8b529ecd9b4abe4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &656303441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11499822, guid: 0879f47b8dd36f34f9ed2240fe09f691,
+    type: 2}
+  m_PrefabInternal: {fileID: 329295826}
+  m_GameObject: {fileID: 656303438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50c6f132ea6af1d47b9c445a0b6bc958, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WideEye: {fileID: 21300006, guid: b8fb4c437c11d784e8b529ecd9b4abe4, type: 3}
+  NarrowEye: {fileID: 21300012, guid: b8fb4c437c11d784e8b529ecd9b4abe4, type: 3}
+--- !u!114 &656303442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11403872, guid: 0879f47b8dd36f34f9ed2240fe09f691,
+    type: 2}
+  m_PrefabInternal: {fileID: 329295826}
+  m_GameObject: {fileID: 656303438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 520c230eae20cd74193a41d952d43d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!60 &656303443
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6003872, guid: 0879f47b8dd36f34f9ed2240fe09f691,
+    type: 2}
+  m_PrefabInternal: {fileID: 329295826}
+  m_GameObject: {fileID: 656303438}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Poly:
+    m_Paths:
+    - - {x: .495000005, y: .119999997}
+      - {x: .254999995, y: .349999994}
+      - {x: .155000001, y: .379999995}
+      - {x: -.115000002, y: .379999995}
+      - {x: -.234999999, y: .360000014}
+      - {x: -.414999992, y: .140000001}
+      - {x: -.495000005, y: -.0199999996}
+      - {x: -.495000005, y: -.129999995}
+      - {x: -.185000002, y: -.379999995}
+      - {x: .0949999988, y: -.379999995}
+      - {x: .165000007, y: -.370000005}
+      - {x: .275000006, y: -.330000013}
+      - {x: .495000005, y: 0}
 --- !u!1 &660555182
 GameObject:
   m_ObjectHideFlags: 0
@@ -1047,6 +1089,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de4fd0c19d3d3ed4ea28776237f02e9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  balloonPop: {fileID: 175950, guid: 33ee8c9f9846a4d41bc2d5a9627ac9f3, type: 2}
 --- !u!50 &660555184
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -1178,6 +1221,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de4fd0c19d3d3ed4ea28776237f02e9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  balloonPop: {fileID: 175950, guid: 33ee8c9f9846a4d41bc2d5a9627ac9f3, type: 2}
 --- !u!50 &674991146
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -1444,6 +1488,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de4fd0c19d3d3ed4ea28776237f02e9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  balloonPop: {fileID: 175950, guid: 33ee8c9f9846a4d41bc2d5a9627ac9f3, type: 2}
 --- !u!50 &894334313
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -1819,6 +1864,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de4fd0c19d3d3ed4ea28776237f02e9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  balloonPop: {fileID: 175950, guid: 33ee8c9f9846a4d41bc2d5a9627ac9f3, type: 2}
 --- !u!50 &1830685073
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -1972,6 +2018,7 @@ Prefab:
     m_RemovedComponents:
     - {fileID: 11488804, guid: f3b0ddb0b0c864844a23705cfd842ea3, type: 2}
     - {fileID: 11461806, guid: f3b0ddb0b0c864844a23705cfd842ea3, type: 2}
+    - {fileID: 11464986, guid: f3b0ddb0b0c864844a23705cfd842ea3, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: f3b0ddb0b0c864844a23705cfd842ea3, type: 2}
   m_RootGameObject: {fileID: 278180542}
   m_IsPrefabParent: 0
@@ -2056,6 +2103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de4fd0c19d3d3ed4ea28776237f02e9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  balloonPop: {fileID: 175950, guid: 33ee8c9f9846a4d41bc2d5a9627ac9f3, type: 2}
 --- !u!50 &1994809538
 Rigidbody2D:
   m_ObjectHideFlags: 0
