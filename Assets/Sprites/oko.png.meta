@@ -4,6 +4,11 @@ TextureImporter:
   fileIDToRecycleName:
     21300000: eye_off
     21300002: eye_on
+    21300004: eye4
+    21300006: eye3
+    21300008: eye2
+    21300010: eye1
+    21300012: eye0
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -45,23 +50,53 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: eye_off
+    - name: eye4
       rect:
         serializedVersion: 2
-        x: 28
-        y: 201
-        width: 215
-        height: 168
+        x: 10
+        y: 2
+        width: 100
+        height: 76
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: eye_on
+    - name: eye3
       rect:
         serializedVersion: 2
-        x: 36
-        y: 20
-        width: 215
-        height: 167
+        x: 128
+        y: 1
+        width: 99
+        height: 77
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: eye2
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 1
+        width: 100
+        height: 77
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: eye1
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 2
+        width: 100
+        height: 76
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: eye0
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 2
+        width: 99
+        height: 76
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}

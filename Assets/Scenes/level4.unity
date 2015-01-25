@@ -313,6 +313,57 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelClearPrefab: {fileID: 175090, guid: 7483e54af06c14d429de062ea6a0d333, type: 2}
+--- !u!1 &456266893
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 173856, guid: 0879f47b8dd36f34f9ed2240fe09f691, type: 2}
+  m_PrefabInternal: {fileID: 1688180216}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 456266894}
+  - 212: {fileID: 456266895}
+  m_Layer: 0
+  m_Name: eye0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &456266894
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 473856, guid: 0879f47b8dd36f34f9ed2240fe09f691, type: 2}
+  m_PrefabInternal: {fileID: 1688180216}
+  m_GameObject: {fileID: 456266893}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.23000002, y: 8.10999966, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1241300654}
+  m_RootOrder: 4
+--- !u!212 &456266895
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21273856, guid: 0879f47b8dd36f34f9ed2240fe09f691,
+    type: 2}
+  m_PrefabInternal: {fileID: 1688180216}
+  m_GameObject: {fileID: 456266893}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300012, guid: b8fb4c437c11d784e8b529ecd9b4abe4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &618589665
 Prefab:
   m_ObjectHideFlags: 0
@@ -370,7 +421,7 @@ GameObject:
   - 50: {fileID: 627197778}
   - 114: {fileID: 627197777}
   - 114: {fileID: 627197782}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: balloon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -441,14 +492,6 @@ PolygonCollider2D:
       - {x: -.189999998, y: -.275000006}
       - {x: -.170000002, y: -.335000008}
       - {x: -.0199999996, y: -.395000011}
-      - {x: -.00999999978, y: -.764999986}
-      - {x: 0, y: -.845000029}
-      - {x: .0299999993, y: -1.03499997}
-      - {x: .0900000036, y: -1.15499997}
-      - {x: .159999996, y: -1.15499997}
-      - {x: .170000002, y: -1.14499998}
-      - {x: .100000001, y: -.735000014}
-      - {x: .0799999982, y: -.735000014}
 --- !u!212 &627197780
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1038,6 +1081,7 @@ Transform:
   - {fileID: 1468354259}
   - {fileID: 627197781}
   - {fileID: 890801938}
+  - {fileID: 456266894}
   m_Father: {fileID: 1428380294}
   m_RootOrder: 0
 --- !u!1 &1428380293
@@ -1082,7 +1126,7 @@ GameObject:
   - 50: {fileID: 1468354256}
   - 114: {fileID: 1468354255}
   - 114: {fileID: 1468354260}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: balloon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1153,14 +1197,6 @@ PolygonCollider2D:
       - {x: -.189999998, y: -.275000006}
       - {x: -.170000002, y: -.335000008}
       - {x: -.0199999996, y: -.395000011}
-      - {x: -.00999999978, y: -.764999986}
-      - {x: 0, y: -.845000029}
-      - {x: .0299999993, y: -1.03499997}
-      - {x: .0900000036, y: -1.15499997}
-      - {x: .159999996, y: -1.15499997}
-      - {x: .170000002, y: -1.14499998}
-      - {x: .100000001, y: -.735000014}
-      - {x: .0799999982, y: -.735000014}
 --- !u!212 &1468354258
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1330,6 +1366,18 @@ Prefab:
     - target: {fileID: 450764, guid: 0879f47b8dd36f34f9ed2240fe09f691, type: 2}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 473856, guid: 0879f47b8dd36f34f9ed2240fe09f691, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -3.23000002
+      objectReference: {fileID: 0}
+    - target: {fileID: 473856, guid: 0879f47b8dd36f34f9ed2240fe09f691, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 8.10999966
+      objectReference: {fileID: 0}
+    - target: {fileID: 473856, guid: 0879f47b8dd36f34f9ed2240fe09f691, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0879f47b8dd36f34f9ed2240fe09f691, type: 2}
