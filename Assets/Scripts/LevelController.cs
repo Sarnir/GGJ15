@@ -7,7 +7,7 @@ public class LevelController : MonoBehaviour
 	public GameObject felineEye;
 
 	private GameObject levelClear;
-	private int lastLevel = 13;
+	private int lastLevel = 12;
 	const float slowmoScale = 0.1f;
 	const float normalScale = 1.0f;
 	const float shiftSpeed = 2.0f;
@@ -71,7 +71,7 @@ public class LevelController : MonoBehaviour
 		{
 			levelClear.SetActive(true);
 		}
-		if (levelCleared && Input.GetKey(KeyCode.Return))
+		if ((levelCleared && Input.GetKey(KeyCode.Return)) || Input.GetKey(KeyCode.F))
 		{
 			if (Application.loadedLevel == lastLevel)
 				Application.LoadLevel("endGame");
