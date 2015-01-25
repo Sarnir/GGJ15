@@ -116,9 +116,9 @@ TextureImporter:
     - name: button_on
       rect:
         serializedVersion: 2
-        x: 40
-        y: 686
-        width: 162
+        x: 41
+        y: 687
+        width: 161
         height: 116
       alignment: 0
       pivot: {x: .5, y: .5}

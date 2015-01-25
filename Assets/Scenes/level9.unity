@@ -952,8 +952,8 @@ GameObject:
   - 212: {fileID: 1593596176}
   - 61: {fileID: 1593596175}
   - 50: {fileID: 1593596174}
-  - 114: {fileID: 1593596173}
   - 114: {fileID: 1593596178}
+  - 114: {fileID: 1593596173}
   m_Layer: 0
   m_Name: plankDynamic
   m_TagString: Untagged
@@ -964,7 +964,7 @@ GameObject:
 --- !u!114 &1593596173
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11488804, guid: f3b0ddb0b0c864844a23705cfd842ea3,
+  m_PrefabParentObject: {fileID: 11464986, guid: f3b0ddb0b0c864844a23705cfd842ea3,
     type: 2}
   m_PrefabInternal: {fileID: 580786118}
   m_GameObject: {fileID: 1593596172}
@@ -973,6 +973,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1de7e3910300fd44084f2222173a7349, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cursorSpritePrefab: {fileID: 131642, guid: 39d58a3b652af994e89bc3b9e3762568, type: 2}
 --- !u!50 &1593596174
 Rigidbody2D:
   m_ObjectHideFlags: 0

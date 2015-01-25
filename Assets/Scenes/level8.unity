@@ -158,14 +158,6 @@ PolygonCollider2D:
       - {x: -.189999998, y: -.275000006}
       - {x: -.170000002, y: -.335000008}
       - {x: -.0199999996, y: -.395000011}
-      - {x: -.00999999978, y: -.764999986}
-      - {x: 0, y: -.845000029}
-      - {x: .0299999993, y: -1.03499997}
-      - {x: .0900000036, y: -1.15499997}
-      - {x: .159999996, y: -1.15499997}
-      - {x: .170000002, y: -1.14499998}
-      - {x: .100000001, y: -.735000014}
-      - {x: .0799999982, y: -.735000014}
 --- !u!212 &7064050
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -225,6 +217,7 @@ GameObject:
   - 61: {fileID: 39065255}
   - 50: {fileID: 39065254}
   - 114: {fileID: 39065253}
+  - 114: {fileID: 39065258}
   - 233: {fileID: 39065252}
   m_Layer: 0
   m_Name: plankDynamic
@@ -327,6 +320,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2003877777}
   m_RootOrder: 2
+--- !u!114 &39065258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11464986, guid: f3b0ddb0b0c864844a23705cfd842ea3,
+    type: 2}
+  m_PrefabInternal: {fileID: 406936328}
+  m_GameObject: {fileID: 39065251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1de7e3910300fd44084f2222173a7349, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorSpritePrefab: {fileID: 131642, guid: 39d58a3b652af994e89bc3b9e3762568, type: 2}
 --- !u!1 &49732781
 GameObject:
   m_ObjectHideFlags: 0
@@ -423,14 +429,6 @@ PolygonCollider2D:
       - {x: -.189999998, y: -.275000006}
       - {x: -.170000002, y: -.335000008}
       - {x: -.0199999996, y: -.395000011}
-      - {x: -.00999999978, y: -.764999986}
-      - {x: 0, y: -.845000029}
-      - {x: .0299999993, y: -1.03499997}
-      - {x: .0900000036, y: -1.15499997}
-      - {x: .159999996, y: -1.15499997}
-      - {x: .170000002, y: -1.14499998}
-      - {x: .100000001, y: -.735000014}
-      - {x: .0799999982, y: -.735000014}
 --- !u!212 &49732786
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -963,6 +961,10 @@ Prefab:
       value: 
       objectReference: {fileID: 1710583868}
     - target: {fileID: 11442114, guid: dd862e8a44700d64cbb0b0abfec9cfa4, type: 2}
+      propertyPath: stringOwner
+      value: 
+      objectReference: {fileID: 1710583867}
+    - target: {fileID: 11438092, guid: dd862e8a44700d64cbb0b0abfec9cfa4, type: 2}
       propertyPath: stringOwner
       value: 
       objectReference: {fileID: 1710583867}
@@ -1761,6 +1763,7 @@ GameObject:
   - 61: {fileID: 1204481511}
   - 50: {fileID: 1204481510}
   - 114: {fileID: 1204481509}
+  - 114: {fileID: 1204481515}
   - 233: {fileID: 1204481514}
   m_Layer: 0
   m_Name: plankDynamic
@@ -1863,6 +1866,19 @@ HingeJoint2D:
   m_AngleLimits:
     m_LowerAngle: 0
     m_UpperAngle: 359
+--- !u!114 &1204481515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11464986, guid: f3b0ddb0b0c864844a23705cfd842ea3,
+    type: 2}
+  m_PrefabInternal: {fileID: 573390648}
+  m_GameObject: {fileID: 1204481508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1de7e3910300fd44084f2222173a7349, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorSpritePrefab: {fileID: 131642, guid: 39d58a3b652af994e89bc3b9e3762568, type: 2}
 --- !u!1 &1322277884
 GameObject:
   m_ObjectHideFlags: 0
@@ -1875,6 +1891,7 @@ GameObject:
   - 61: {fileID: 1322277888}
   - 50: {fileID: 1322277887}
   - 114: {fileID: 1322277886}
+  - 114: {fileID: 1322277891}
   - 233: {fileID: 1322277885}
   m_Layer: 0
   m_Name: plankDynamic
@@ -1977,6 +1994,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2003877777}
   m_RootOrder: 3
+--- !u!114 &1322277891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11464986, guid: f3b0ddb0b0c864844a23705cfd842ea3,
+    type: 2}
+  m_PrefabInternal: {fileID: 1625311142}
+  m_GameObject: {fileID: 1322277884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1de7e3910300fd44084f2222173a7349, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorSpritePrefab: {fileID: 131642, guid: 39d58a3b652af994e89bc3b9e3762568, type: 2}
 --- !u!1001 &1375642507
 Prefab:
   m_ObjectHideFlags: 0
@@ -2331,6 +2361,7 @@ GameObject:
   - 61: {fileID: 1710583872}
   - 50: {fileID: 1710583871}
   - 114: {fileID: 1710583870}
+  - 114: {fileID: 1710583874}
   - 232: {fileID: 1710583869}
   m_Layer: 0
   m_Name: woodBlockDynamic
@@ -2427,6 +2458,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2003877777}
   m_RootOrder: 11
+--- !u!114 &1710583874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11476524, guid: 2926406945ae02142858ab6ce0bbb5a4,
+    type: 2}
+  m_PrefabInternal: {fileID: 160567736}
+  m_GameObject: {fileID: 1710583867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1de7e3910300fd44084f2222173a7349, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorSpritePrefab: {fileID: 0}
 --- !u!1 &1765083049
 GameObject:
   m_ObjectHideFlags: 0
@@ -2542,14 +2586,6 @@ PolygonCollider2D:
       - {x: -.189999998, y: -.275000006}
       - {x: -.170000002, y: -.335000008}
       - {x: -.0199999996, y: -.395000011}
-      - {x: -.00999999978, y: -.764999986}
-      - {x: 0, y: -.845000029}
-      - {x: .0299999993, y: -1.03499997}
-      - {x: .0900000036, y: -1.15499997}
-      - {x: .159999996, y: -1.15499997}
-      - {x: .170000002, y: -1.14499998}
-      - {x: .100000001, y: -.735000014}
-      - {x: .0799999982, y: -.735000014}
 --- !u!212 &1835527126
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2904,6 +2940,7 @@ GameObject:
   - 114: {fileID: 2087956958}
   - 60: {fileID: 2087956957}
   - 114: {fileID: 2087956961}
+  - 114: {fileID: 2087956962}
   m_Layer: 0
   m_Name: scissors
   m_TagString: Untagged
@@ -2969,7 +3006,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button_on: {fileID: 21300018, guid: 3e23d0eefe8bb9447bcc5be14b1b37a4, type: 3}
   button_off: {fileID: 21300016, guid: 3e23d0eefe8bb9447bcc5be14b1b37a4, type: 3}
-  stringOwner: {fileID: 1710583867}
 --- !u!212 &2087956959
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3017,3 +3053,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 520c230eae20cd74193a41d952d43d1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2087956962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11438092, guid: dd862e8a44700d64cbb0b0abfec9cfa4,
+    type: 2}
+  m_PrefabInternal: {fileID: 617233660}
+  m_GameObject: {fileID: 2087956956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b1321b5cf47de94eb381130963ceae1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stringOwner: {fileID: 1710583867}

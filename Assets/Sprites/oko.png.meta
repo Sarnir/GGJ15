@@ -1,12 +1,9 @@
 fileFormatVersion: 2
-guid: b987962480fa6ec4c9648d045700f0ef
+guid: b8fb4c437c11d784e8b529ecd9b4abe4
 TextureImporter:
   fileIDToRecycleName:
-    21300000: play
-    21300002: exit
-    21300004: title
-    21300006: continue
-    21300008: quit
+    21300000: eye_off
+    21300002: eye_on
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -48,53 +45,23 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: play
+    - name: eye_off
       rect:
         serializedVersion: 2
-        x: 52
-        y: 343
-        width: 47
-        height: 13
+        x: 28
+        y: 201
+        width: 215
+        height: 168
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: exit
+    - name: eye_on
       rect:
         serializedVersion: 2
-        x: 52
-        y: 299
-        width: 41
-        height: 13
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: title
-      rect:
-        serializedVersion: 2
-        x: 51
-        y: 255
-        width: 126
-        height: 13
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: continue
-      rect:
-        serializedVersion: 2
-        x: 51
-        y: 207
-        width: 206
-        height: 17
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: quit
-      rect:
-        serializedVersion: 2
-        x: 51
-        y: 163
-        width: 179
-        height: 17
+        x: 36
+        y: 20
+        width: 215
+        height: 167
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}

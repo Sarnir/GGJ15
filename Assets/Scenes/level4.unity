@@ -882,6 +882,7 @@ Transform:
   - {fileID: 2025068872}
   - {fileID: 1104920990}
   - {fileID: 2020113907}
+  - {fileID: 1101198169}
   m_Father: {fileID: 1428380294}
   m_RootOrder: 1
 --- !u!1 &1101198167
@@ -920,7 +921,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 2237482049
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 502e625b78be9204fb80a90e2f15a40b, type: 3}
+  m_Sprite: {fileID: 21300002, guid: 4ebcbce089c7f7d4cb7fe1e7f1ca5597, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1101198169
 Transform:
@@ -929,11 +930,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1101198167}
   m_LocalRotation: {x: 0, y: 0, z: -.0863572657, w: .996264219}
-  m_LocalPosition: {x: 1.86000001, y: 1.95000005, z: 0}
-  m_LocalScale: {x: .472752005, y: .472752988, z: .472752988}
+  m_LocalPosition: {x: 2.37005067, y: 5.14806557, z: 0}
+  m_LocalScale: {x: 1.33624923, y: 1.33625138, z: 1.33625138}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_Father: {fileID: 988741489}
+  m_RootOrder: 5
 --- !u!1 &1104920989
 GameObject:
   m_ObjectHideFlags: 0
@@ -1555,7 +1556,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1de7e3910300fd44084f2222173a7349, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorSpritePrefab: {fileID: 0}
+  cursorSpritePrefab: {fileID: 131642, guid: 39d58a3b652af994e89bc3b9e3762568, type: 2}
 --- !u!1001 &1882323261
 Prefab:
   m_ObjectHideFlags: 0

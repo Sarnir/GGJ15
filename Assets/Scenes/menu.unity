@@ -85,6 +85,7 @@ GameObject:
   - 212: {fileID: 172826810}
   - 114: {fileID: 172826812}
   - 61: {fileID: 172826813}
+  - 114: {fileID: 172826814}
   m_Layer: 0
   m_Name: exit
   m_TagString: Untagged
@@ -148,6 +149,17 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .829999924, y: .359999985}
   m_Center: {x: -9.31322575e-10, y: 2.98023224e-08}
+--- !u!114 &172826814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 172826809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 520c230eae20cd74193a41d952d43d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &674060796
 GameObject:
   m_ObjectHideFlags: 0
@@ -159,6 +171,7 @@ GameObject:
   - 212: {fileID: 674060797}
   - 114: {fileID: 674060799}
   - 61: {fileID: 674060800}
+  - 114: {fileID: 674060801}
   m_Layer: 0
   m_Name: play
   m_TagString: Untagged
@@ -222,6 +235,17 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .829999983, y: .400000006}
   m_Center: {x: 0, y: 1.49011612e-08}
+--- !u!114 &674060801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 674060796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 520c230eae20cd74193a41d952d43d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &935075481
 GameObject:
   m_ObjectHideFlags: 0

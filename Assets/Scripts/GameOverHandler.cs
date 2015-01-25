@@ -15,10 +15,10 @@ public class GameOverHandler : MonoBehaviour
 			Screen.lockCursor = false;
 			Application.LoadLevel(PlayerPrefs.GetInt("LastLevel"));
 		}
-		else if (Input.GetKey(KeyCode.Return))
+		else if (Input.GetKey(KeyCode.Escape))
 		{
 			Screen.lockCursor = false;
-			Application.LoadLevel(PlayerPrefs.GetInt("menu"));
+			Application.LoadLevel("menu");
 		}
 	}
 }

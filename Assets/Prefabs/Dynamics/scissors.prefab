@@ -12,6 +12,7 @@ GameObject:
   - 114: {fileID: 11442114}
   - 60: {fileID: 6042114}
   - 114: {fileID: 11442254}
+  - 114: {fileID: 11438092}
   m_Layer: 0
   m_Name: scissors
   m_TagString: Untagged
@@ -74,6 +75,18 @@ PolygonCollider2D:
       - {x: .170000002, y: -.280000001}
       - {x: .219999999, y: -.330000013}
       - {x: .200000003, y: -.379999995}
+--- !u!114 &11438092
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 142114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b1321b5cf47de94eb381130963ceae1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stringOwner: {fileID: 0}
 --- !u!114 &11442114
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -87,7 +100,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button_on: {fileID: 21300018, guid: 3e23d0eefe8bb9447bcc5be14b1b37a4, type: 3}
   button_off: {fileID: 21300016, guid: 3e23d0eefe8bb9447bcc5be14b1b37a4, type: 3}
-  stringOwner: {fileID: 0}
 --- !u!114 &11442254
 MonoBehaviour:
   m_ObjectHideFlags: 1
