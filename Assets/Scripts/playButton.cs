@@ -15,4 +15,9 @@ public class playButton : MonoBehaviour
 	{
 		Application.LoadLevel(1);
 	}
+	
+	void OnMouseHover()
+	{
+		audio.Play();
+	}
 }

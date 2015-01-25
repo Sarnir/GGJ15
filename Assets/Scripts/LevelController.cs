@@ -7,7 +7,7 @@ public class LevelController : MonoBehaviour
 	public GameObject felineEye;
 
 	private GameObject levelClear;
-	private int lastLevel = 11;
+	private int lastLevel = 13;
 	const float slowmoScale = 0.1f;
 	const float normalScale = 1.0f;
 	const float shiftSpeed = 2.0f;

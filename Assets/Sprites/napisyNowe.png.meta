@@ -13,6 +13,7 @@ TextureImporter:
     21300016: textTitle
     21300018: textPlay
     21300020: textExit
+    21300022: textPushIt
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -161,6 +162,16 @@ TextureImporter:
         y: 431
         width: 83
         height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: textPushIt
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 916
+        width: 103
+        height: 92
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
