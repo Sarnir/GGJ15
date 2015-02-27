@@ -303,63 +303,6 @@ Prefab:
   m_RootGameObject: {fileID: 1765057730}
   m_IsPrefabParent: 0
   m_IsExploded: 1
---- !u!1 &237510870
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 237510871}
-  - 50: {fileID: 237510873}
-  - 232: {fileID: 237510872}
-  m_Layer: 0
-  m_Name: rightLine
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &237510871
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 237510870}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .920000017, y: .0500000007, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1812275077}
-  m_RootOrder: 0
---- !u!232 &237510872
-DistanceJoint2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 237510870}
-  m_Enabled: 1
-  m_CollideConnected: 1
-  m_ConnectedRigidBody: {fileID: 0}
-  m_Anchor: {x: .0164768267, y: -.00746629434}
-  m_ConnectedAnchor: {x: 1.3824594, y: 1.43775773}
-  m_Distance: 1
-  m_MaxDistanceOnly: 0
---- !u!50 &237510873
-Rigidbody2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 237510870}
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: .0500000007
-  m_GravityScale: 1
-  m_FixedAngle: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
 --- !u!1 &262989322
 GameObject:
   m_ObjectHideFlags: 0
@@ -816,6 +759,14 @@ Prefab:
       propertyPath: stringOwner
       value: 
       objectReference: {fileID: 1812275072}
+    - target: {fileID: 142114, guid: dd862e8a44700d64cbb0b0abfec9cfa4, type: 2}
+      propertyPath: m_Name
+      value: scissorsLeft
+      objectReference: {fileID: 0}
+    - target: {fileID: 11438092, guid: dd862e8a44700d64cbb0b0abfec9cfa4, type: 2}
+      propertyPath: stringToCut
+      value: 
+      objectReference: {fileID: 1040943290}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dd862e8a44700d64cbb0b0abfec9cfa4, type: 2}
   m_RootGameObject: {fileID: 1778417672}
@@ -922,8 +873,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 1040943289}
   - 212: {fileID: 1040943288}
+  - 50: {fileID: 1040943291}
+  - 232: {fileID: 1040943290}
   m_Layer: 0
-  m_Name: hook
+  m_Name: hookLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -963,6 +916,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 508984077}
   m_RootOrder: 9
+--- !u!232 &1040943290
+DistanceJoint2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1040943287}
+  m_Enabled: 1
+  m_CollideConnected: 0
+  m_ConnectedRigidBody: {fileID: 1812275074}
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: -1.25105953, y: .0167615078}
+  m_Distance: 2.25999999
+  m_MaxDistanceOnly: 0
+--- !u!50 &1040943291
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1040943287}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 0
+  m_FixedAngle: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!1001 &1093212342
 Prefab:
   m_ObjectHideFlags: 0
@@ -1458,8 +1439,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 1441758826}
   - 212: {fileID: 1441758825}
+  - 50: {fileID: 1441758828}
+  - 232: {fileID: 1441758827}
   m_Layer: 0
-  m_Name: hook
+  m_Name: hookRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1499,6 +1482,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 508984077}
   m_RootOrder: 8
+--- !u!232 &1441758827
+DistanceJoint2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1441758824}
+  m_Enabled: 1
+  m_CollideConnected: 0
+  m_ConnectedRigidBody: {fileID: 1812275074}
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: .972249627, y: .020519333}
+  m_Distance: 1.14999998
+  m_MaxDistanceOnly: 0
+--- !u!50 &1441758828
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1441758824}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_FixedAngle: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!1 &1513415213
 GameObject:
   m_ObjectHideFlags: 0
@@ -1606,7 +1617,7 @@ GameObject:
   - 114: {fileID: 1602236874}
   - 114: {fileID: 1602236873}
   m_Layer: 0
-  m_Name: scissors
+  m_Name: scissorsRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1624,7 +1635,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b1321b5cf47de94eb381130963ceae1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stringOwner: {fileID: 237510870}
+  stringToCut: {fileID: 1441758827}
 --- !u!114 &1602236874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2036,7 +2047,7 @@ GameObject:
   - 114: {fileID: 1778417674}
   - 114: {fileID: 1778417673}
   m_Layer: 0
-  m_Name: scissors
+  m_Name: scissorsLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2054,7 +2065,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b1321b5cf47de94eb381130963ceae1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stringOwner: {fileID: 1812275072}
+  stringToCut: {fileID: 1040943290}
 --- !u!114 &1778417674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2215,8 +2226,6 @@ GameObject:
   - 212: {fileID: 1812275076}
   - 61: {fileID: 1812275075}
   - 50: {fileID: 1812275074}
-  - 232: {fileID: 1812275073}
-  - 232: {fileID: 1812275078}
   m_Layer: 0
   m_Name: plankDynamic
   m_TagString: Untagged
@@ -2224,19 +2233,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!232 &1812275073
-DistanceJoint2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1812275072}
-  m_Enabled: 1
-  m_CollideConnected: 1
-  m_ConnectedRigidBody: {fileID: 0}
-  m_Anchor: {x: -1.24000001, y: 0}
-  m_ConnectedAnchor: {x: -1.95807028, y: 3.74041629}
-  m_Distance: 1.97000003
-  m_MaxDistanceOnly: 0
 --- !u!50 &1812275074
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -2297,23 +2293,9 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: -.178165153, w: .984000623}
   m_LocalPosition: {x: .0399999917, y: 2.38999987, z: 0}
   m_LocalScale: {x: 1.526811, y: 1.24905205, z: 1.31826866}
-  m_Children:
-  - {fileID: 237510871}
+  m_Children: []
   m_Father: {fileID: 262989323}
   m_RootOrder: 6
---- !u!232 &1812275078
-DistanceJoint2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1812275072}
-  m_Enabled: 1
-  m_CollideConnected: 1
-  m_ConnectedRigidBody: {fileID: 237510873}
-  m_Anchor: {x: .980000019, y: 0}
-  m_ConnectedAnchor: {x: .100000001, y: -.0126774367}
-  m_Distance: .00999999978
-  m_MaxDistanceOnly: 0
 --- !u!1001 &1868268700
 Prefab:
   m_ObjectHideFlags: 0
@@ -2356,7 +2338,15 @@ Prefab:
     - target: {fileID: 11438092, guid: dd862e8a44700d64cbb0b0abfec9cfa4, type: 2}
       propertyPath: stringOwner
       value: 
-      objectReference: {fileID: 237510870}
+      objectReference: {fileID: 0}
+    - target: {fileID: 142114, guid: dd862e8a44700d64cbb0b0abfec9cfa4, type: 2}
+      propertyPath: m_Name
+      value: scissorsRight
+      objectReference: {fileID: 0}
+    - target: {fileID: 11438092, guid: dd862e8a44700d64cbb0b0abfec9cfa4, type: 2}
+      propertyPath: stringToCut
+      value: 
+      objectReference: {fileID: 1441758827}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dd862e8a44700d64cbb0b0abfec9cfa4, type: 2}
   m_RootGameObject: {fileID: 1602236872}

@@ -12,6 +12,9 @@ public class Touchable : MonoBehaviour {
 
 	GameObject cursorSprite;
 
+    [SerializeField()]
+    float touchForce = 1.0f;
+
 	// Use this for initialization
 	void Start ()
 	{
@@ -33,6 +36,7 @@ public class Touchable : MonoBehaviour {
 			//var timeFactor = Time.unscaledDeltaTime;
 			var force = new Vector2(Input.GetAxis("Mouse X") / timeFactor, Input.GetAxis("Mouse Y") / timeFactor);
 			force /= Time.timeScale;
+            force *= touchForce;
 			rigidbody2D.AddForce(force);
 		}
 	}

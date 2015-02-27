@@ -13,6 +13,7 @@ public class playButton : MonoBehaviour
 
 	void OnMouseUp()
 	{
+        PlayerPrefs.Save();
 		Application.LoadLevel(1);
 	}
 	

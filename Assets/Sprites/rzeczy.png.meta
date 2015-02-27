@@ -22,6 +22,7 @@ TextureImporter:
     21300034: stone
     21300036: rzeczy_18
     21300038: ramp
+    21300040: cross
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -260,6 +261,16 @@ TextureImporter:
         y: 9
         width: 449
         height: 205
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cross
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 4
+        width: 218
+        height: 219
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}

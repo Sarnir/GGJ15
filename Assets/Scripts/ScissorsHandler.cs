@@ -3,7 +3,7 @@ using System.Collections;
 
 public class ScissorsHandler : MonoBehaviour
 {
-	public GameObject stringOwner;
+    public DistanceJoint2D stringToCut;
 
 	void Start ()
 	{
@@ -15,6 +15,6 @@ public class ScissorsHandler : MonoBehaviour
 
 	void OnMouseDown()
 	{
-		Destroy(stringOwner.GetComponent<DistanceJoint2D>());
+        Destroy(stringToCut);
 	}
 }

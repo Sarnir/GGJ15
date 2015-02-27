@@ -13,6 +13,7 @@ public class exitButton : MonoBehaviour
 
 	void OnMouseUp()
 	{
+        PlayerPrefs.Save();
 		Application.Quit();
 	}
 
