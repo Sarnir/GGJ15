@@ -56,7 +56,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 475090}
   - 82: {fileID: 8258088}
-  - 114: {fileID: 11458088}
   m_Layer: 0
   m_Name: LevelClear
   m_TagString: Untagged
@@ -231,18 +230,6 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
---- !u!114 &11458088
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 175090}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ecb383f2d06e7e49aa89ffbed4c87a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shadow: {fileID: 137094}
 --- !u!212 &21237094
 SpriteRenderer:
   m_ObjectHideFlags: 1
