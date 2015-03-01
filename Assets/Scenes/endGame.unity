@@ -119,7 +119,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 166502, guid: 0e2f5cbc3f270f7409ea8af84d70cbf3, type: 2}
       propertyPath: m_Layer
-      value: 8
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 166502, guid: 0e2f5cbc3f270f7409ea8af84d70cbf3, type: 2}
+      propertyPath: m_TagString
+      value: catIgnore
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0e2f5cbc3f270f7409ea8af84d70cbf3, type: 2}
@@ -197,9 +201,9 @@ GameObject:
   - 114: {fileID: 402813326}
   - 114: {fileID: 402813330}
   - 232: {fileID: 402813325}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: balloon
-  m_TagString: Untagged
+  m_TagString: catIgnore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -241,6 +245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de4fd0c19d3d3ed4ea28776237f02e9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  balloonPop: {fileID: 175950, guid: 33ee8c9f9846a4d41bc2d5a9627ac9f3, type: 2}
 --- !u!50 &402813327
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -249,7 +254,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 1019487500}
   m_GameObject: {fileID: 402813323}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: .5
   m_AngularDrag: .0500000007
   m_GravityScale: -.5
   m_FixedAngle: 0
@@ -587,7 +592,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 570514840}
   m_GameObject: {fileID: 464843677}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: .0500000007
   m_GravityScale: 1
   m_FixedAngle: 0
@@ -786,6 +791,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 901597035}
   - 212: {fileID: 901597036}
+  - 60: {fileID: 901597039}
+  - 114: {fileID: 901597038}
+  - 114: {fileID: 901597037}
   m_Layer: 0
   m_Name: eye0
   m_TagString: Untagged
@@ -828,6 +836,57 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300012, guid: b8fb4c437c11d784e8b529ecd9b4abe4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &901597037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11499822, guid: 0879f47b8dd36f34f9ed2240fe09f691,
+    type: 2}
+  m_PrefabInternal: {fileID: 284676582}
+  m_GameObject: {fileID: 901597034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50c6f132ea6af1d47b9c445a0b6bc958, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WideEye: {fileID: 21300006, guid: b8fb4c437c11d784e8b529ecd9b4abe4, type: 3}
+  NarrowEye: {fileID: 21300012, guid: b8fb4c437c11d784e8b529ecd9b4abe4, type: 3}
+--- !u!114 &901597038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11403872, guid: 0879f47b8dd36f34f9ed2240fe09f691,
+    type: 2}
+  m_PrefabInternal: {fileID: 284676582}
+  m_GameObject: {fileID: 901597034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 520c230eae20cd74193a41d952d43d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!60 &901597039
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6003872, guid: 0879f47b8dd36f34f9ed2240fe09f691,
+    type: 2}
+  m_PrefabInternal: {fileID: 284676582}
+  m_GameObject: {fileID: 901597034}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Poly:
+    m_Paths:
+    - - {x: .495000005, y: .119999997}
+      - {x: .254999995, y: .349999994}
+      - {x: .155000001, y: .379999995}
+      - {x: -.115000002, y: .379999995}
+      - {x: -.234999999, y: .360000014}
+      - {x: -.414999992, y: .140000001}
+      - {x: -.495000005, y: -.0199999996}
+      - {x: -.495000005, y: -.129999995}
+      - {x: -.185000002, y: -.379999995}
+      - {x: .0949999988, y: -.379999995}
+      - {x: .165000007, y: -.370000005}
+      - {x: .275000006, y: -.330000013}
+      - {x: .495000005, y: 0}
 --- !u!1001 &1019487500
 Prefab:
   m_ObjectHideFlags: 0
@@ -873,7 +932,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 166502, guid: 0e2f5cbc3f270f7409ea8af84d70cbf3, type: 2}
       propertyPath: m_Layer
-      value: 8
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 166502, guid: 0e2f5cbc3f270f7409ea8af84d70cbf3, type: 2}
+      propertyPath: m_TagString
+      value: catIgnore
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0e2f5cbc3f270f7409ea8af84d70cbf3, type: 2}
@@ -890,9 +953,9 @@ GameObject:
   - 4: {fileID: 1076795955}
   - 212: {fileID: 1076795957}
   - 60: {fileID: 1076795956}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Background
-  m_TagString: Untagged
+  m_TagString: catIgnore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2102,7 +2165,7 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2521559555
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300014, guid: 4ebcbce089c7f7d4cb7fe1e7f1ca5597, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3389,7 +3452,7 @@ AudioSource:
 --- !u!82 &1751902014
 AudioSource:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 8284670, guid: 0879f47b8dd36f34f9ed2240fe09f691,
+  m_PrefabParentObject: {fileID: 8295844, guid: 0879f47b8dd36f34f9ed2240fe09f691,
     type: 2}
   m_PrefabInternal: {fileID: 284676582}
   m_GameObject: {fileID: 1751902010}
@@ -3403,7 +3466,7 @@ AudioSource:
   Mute: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 7.60879517
+  MinDistance: 10.0740871
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -3488,9 +3551,9 @@ GameObject:
   - 114: {fileID: 2126555624}
   - 114: {fileID: 2126555629}
   - 232: {fileID: 2126555623}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: balloon
-  m_TagString: Untagged
+  m_TagString: catIgnore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3504,7 +3567,7 @@ DistanceJoint2D:
   m_Enabled: 1
   m_CollideConnected: 1
   m_ConnectedRigidBody: {fileID: 464843681}
-  m_Anchor: {x: .129999995, y: -.959999979}
+  m_Anchor: {x: .199949205, y: -1.19806528}
   m_ConnectedAnchor: {x: -8.73410499e-08, y: 2.01959722e-07}
   m_Distance: .150000006
   m_MaxDistanceOnly: 0
@@ -3520,6 +3583,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de4fd0c19d3d3ed4ea28776237f02e9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  balloonPop: {fileID: 175950, guid: 33ee8c9f9846a4d41bc2d5a9627ac9f3, type: 2}
 --- !u!50 &2126555625
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -3528,7 +3592,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 44992332}
   m_GameObject: {fileID: 2126555622}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: .5
   m_AngularDrag: .0500000007
   m_GravityScale: -.5
   m_FixedAngle: 0

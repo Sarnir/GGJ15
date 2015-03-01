@@ -121,6 +121,10 @@ Prefab:
       propertyPath: stringOwner
       value: 
       objectReference: {fileID: 987367256}
+    - target: {fileID: 11438092, guid: dd862e8a44700d64cbb0b0abfec9cfa4, type: 2}
+      propertyPath: stringToCut
+      value: 
+      objectReference: {fileID: 987367257}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dd862e8a44700d64cbb0b0abfec9cfa4, type: 2}
   m_RootGameObject: {fileID: 1446571355}
@@ -260,6 +264,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursorSpritePrefab: {fileID: 131642, guid: 39d58a3b652af994e89bc3b9e3762568, type: 2}
+  touchForce: 1
 --- !u!50 &262045046
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -1250,7 +1255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b1321b5cf47de94eb381130963ceae1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stringOwner: {fileID: 987367256}
+  stringToCut: {fileID: 987367257}
 --- !u!1 &1471094778
 GameObject:
   m_ObjectHideFlags: 0
@@ -1981,7 +1986,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 1625867943}
   m_GameObject: {fileID: 2044861652}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: .0500000007
   m_GravityScale: 1
   m_FixedAngle: 0
@@ -2084,9 +2089,9 @@ GameObject:
   - 4: {fileID: 2101914529}
   - 212: {fileID: 2101914531}
   - 60: {fileID: 2101914530}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Background
-  m_TagString: Untagged
+  m_TagString: catIgnore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

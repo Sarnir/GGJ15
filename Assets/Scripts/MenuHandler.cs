@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class eyeController : MonoBehaviour
+public class MenuHandler : MonoBehaviour
 {
 	void Start ()
 	{
+		audio.Play();
 	}
 
 	void Update ()

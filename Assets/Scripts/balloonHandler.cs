@@ -20,8 +20,19 @@ public class balloonHandler : MonoBehaviour
 
 	void OnMouseDown()
 	{
-		spriteRenderer.sprite = balloonPop.GetComponent<SpriteRenderer>().sprite;
-		collider2D.enabled = false;
-		Destroy (gameObject, 0.1f);
+        PopBalloon();
 	}
+
+    void PopBalloon()
+    {
+        spriteRenderer.sprite = balloonPop.GetComponent<SpriteRenderer>().sprite;
+        collider2D.enabled = false;
+        Destroy(gameObject, 0.1f);
+    }
+
+    void OnCollisionEnter2D(Collision2D coll)
+    {
+        if (coll.gameObject.tag == "obstacle")
+            PopBalloon();
+    }
 }

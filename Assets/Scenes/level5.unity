@@ -326,7 +326,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 637993630}
   - 212: {fileID: 637993631}
-  - 60: {fileID: 637993632}
+  - 60: {fileID: 637993634}
+  - 114: {fileID: 637993633}
+  - 114: {fileID: 637993632}
   m_Layer: 0
   m_Name: eye0
   m_TagString: Untagged
@@ -369,16 +371,42 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300012, guid: b8fb4c437c11d784e8b529ecd9b4abe4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!60 &637993632
+--- !u!114 &637993632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11499822, guid: 0879f47b8dd36f34f9ed2240fe09f691,
+    type: 2}
+  m_PrefabInternal: {fileID: 1453463830}
+  m_GameObject: {fileID: 637993629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50c6f132ea6af1d47b9c445a0b6bc958, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WideEye: {fileID: 21300006, guid: b8fb4c437c11d784e8b529ecd9b4abe4, type: 3}
+  NarrowEye: {fileID: 21300012, guid: b8fb4c437c11d784e8b529ecd9b4abe4, type: 3}
+--- !u!114 &637993633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11403872, guid: 0879f47b8dd36f34f9ed2240fe09f691,
+    type: 2}
+  m_PrefabInternal: {fileID: 1453463830}
+  m_GameObject: {fileID: 637993629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 520c230eae20cd74193a41d952d43d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!60 &637993634
 PolygonCollider2D:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6055710, guid: 0879f47b8dd36f34f9ed2240fe09f691,
+  m_PrefabParentObject: {fileID: 6003872, guid: 0879f47b8dd36f34f9ed2240fe09f691,
     type: 2}
   m_PrefabInternal: {fileID: 1453463830}
   m_GameObject: {fileID: 637993629}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Poly:
     m_Paths:
     - - {x: .495000005, y: .119999997}
@@ -498,7 +526,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 2058962769}
   m_GameObject: {fileID: 656082289}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: .0500000007
   m_GravityScale: 1
   m_FixedAngle: 0
@@ -550,6 +578,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 738020955}
   - 114: {fileID: 738020956}
+  - 82: {fileID: 738020957}
   m_Layer: 0
   m_Name: Level
   m_TagString: Untagged
@@ -583,6 +612,66 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelClearPrefab: {fileID: 175090, guid: 7483e54af06c14d429de062ea6a0d333, type: 2}
+  felineEye: {fileID: 637993629}
+--- !u!82 &738020957
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8295844, guid: 0879f47b8dd36f34f9ed2240fe09f691,
+    type: 2}
+  m_PrefabInternal: {fileID: 1453463830}
+  m_GameObject: {fileID: 738020954}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 908ffcbd9df5baf4498dfb11ecdebac6, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 10.0740871
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1001 &772510357
 Prefab:
   m_ObjectHideFlags: 0
@@ -678,9 +767,9 @@ GameObject:
   - 50: {fileID: 820672040}
   - 114: {fileID: 820672044}
   - 114: {fileID: 820672039}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: plankDynamic
-  m_TagString: Untagged
+  m_TagString: catIgnore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -698,6 +787,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursorSpritePrefab: {fileID: 131642, guid: 39d58a3b652af994e89bc3b9e3762568, type: 2}
+  touchForce: 1
 --- !u!50 &820672040
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -891,7 +981,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 188804, guid: f3b0ddb0b0c864844a23705cfd842ea3, type: 2}
       propertyPath: m_Layer
-      value: 8
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 188804, guid: f3b0ddb0b0c864844a23705cfd842ea3, type: 2}
+      propertyPath: m_TagString
+      value: catIgnore
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f3b0ddb0b0c864844a23705cfd842ea3, type: 2}
@@ -1039,7 +1133,7 @@ GameObject:
   - 60: {fileID: 1284748869}
   m_Layer: 0
   m_Name: spikes
-  m_TagString: Untagged
+  m_TagString: obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1233,7 +1327,7 @@ GameObject:
   - 60: {fileID: 1410256708}
   m_Layer: 0
   m_Name: spikes
-  m_TagString: Untagged
+  m_TagString: obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1467,9 +1561,9 @@ GameObject:
   - 4: {fileID: 1497245661}
   - 212: {fileID: 1497245663}
   - 60: {fileID: 1497245662}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Background
-  m_TagString: Untagged
+  m_TagString: catIgnore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1767,7 +1861,7 @@ GameObject:
   - 60: {fileID: 2097869823}
   m_Layer: 0
   m_Name: spikes
-  m_TagString: Untagged
+  m_TagString: obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

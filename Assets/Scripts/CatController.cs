@@ -3,8 +3,6 @@ using System.Collections;
 
 public class CatController : MonoBehaviour
 {
-	private int catIgnoreLayer = 8;
-
 	void Start ()
 	{
 	}
@@ -15,7 +13,7 @@ public class CatController : MonoBehaviour
 	
 	void OnCollisionEnter2D(Collision2D collision)
 	{
-		if (collision.gameObject.layer != catIgnoreLayer)
+		if (collision.gameObject.tag != "catIgnore")
 		{
 			PlayerPrefs.SetInt ("LastLevel", Application.loadedLevel);
 			Application.LoadLevel ("gameOver");

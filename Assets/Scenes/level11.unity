@@ -86,9 +86,9 @@ GameObject:
   - 50: {fileID: 29696745}
   - 60: {fileID: 29696744}
   - 114: {fileID: 29696743}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: cat
-  m_TagString: Untagged
+  m_TagString: catIgnore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -190,7 +190,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 1630213163}
   m_GameObject: {fileID: 29696741}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: .0500000007
   m_GravityScale: 1
   m_FixedAngle: 0
@@ -230,6 +230,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 38605697}
   - 114: {fileID: 38605698}
+  - 82: {fileID: 38605699}
   m_Layer: 0
   m_Name: Level
   m_TagString: Untagged
@@ -263,6 +264,66 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelClearPrefab: {fileID: 175090, guid: 7483e54af06c14d429de062ea6a0d333, type: 2}
+  felineEye: {fileID: 2076647827}
+--- !u!82 &38605699
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8295844, guid: 0879f47b8dd36f34f9ed2240fe09f691,
+    type: 2}
+  m_PrefabInternal: {fileID: 982511650}
+  m_GameObject: {fileID: 38605696}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 908ffcbd9df5baf4498dfb11ecdebac6, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 10.0740871
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &110693623
 GameObject:
   m_ObjectHideFlags: 0
@@ -275,9 +336,9 @@ GameObject:
   - 50: {fileID: 110693627}
   - 60: {fileID: 110693626}
   - 114: {fileID: 110693625}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: cat
-  m_TagString: Untagged
+  m_TagString: catIgnore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -379,7 +440,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 1965827444}
   m_GameObject: {fileID: 110693623}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: .0500000007
   m_GravityScale: 1
   m_FixedAngle: 0
@@ -451,7 +512,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114880, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 414880, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
       propertyPath: m_LocalScale.x
@@ -465,6 +526,10 @@ Prefab:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: c5db0dbb0e9d15c4fa8c1f0a8be95dba, type: 2}
+    - target: {fileID: 114880, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
+      propertyPath: m_TagString
+      value: catIgnore
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
   m_RootGameObject: {fileID: 672501182}
@@ -482,9 +547,9 @@ GameObject:
   - 50: {fileID: 353561783}
   - 60: {fileID: 353561782}
   - 114: {fileID: 353561781}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: cat
-  m_TagString: Untagged
+  m_TagString: catIgnore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -574,7 +639,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 1297792563}
   m_GameObject: {fileID: 353561780}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: .0500000007
   m_GravityScale: 1
   m_FixedAngle: 0
@@ -629,9 +694,9 @@ GameObject:
   - 50: {fileID: 353671054}
   - 60: {fileID: 353671053}
   - 114: {fileID: 353671052}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: cat
-  m_TagString: Untagged
+  m_TagString: catIgnore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -733,7 +798,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 1427025532}
   m_GameObject: {fileID: 353671050}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: .0500000007
   m_GravityScale: 1
   m_FixedAngle: 0
@@ -776,9 +841,9 @@ GameObject:
   - 50: {fileID: 459607654}
   - 60: {fileID: 459607653}
   - 114: {fileID: 459607652}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: cat
-  m_TagString: Untagged
+  m_TagString: catIgnore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -880,7 +945,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 1921398215}
   m_GameObject: {fileID: 459607650}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: .0500000007
   m_GravityScale: 1
   m_FixedAngle: 0
@@ -952,12 +1017,16 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114880, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6014880, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: c5db0dbb0e9d15c4fa8c1f0a8be95dba, type: 2}
+    - target: {fileID: 114880, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
+      propertyPath: m_TagString
+      value: catIgnore
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
   m_RootGameObject: {fileID: 1024859852}
@@ -1032,7 +1101,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114880, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 414880, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
       propertyPath: m_LocalScale.x
@@ -1046,6 +1115,10 @@ Prefab:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: c5db0dbb0e9d15c4fa8c1f0a8be95dba, type: 2}
+    - target: {fileID: 114880, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
+      propertyPath: m_TagString
+      value: catIgnore
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
   m_RootGameObject: {fileID: 1425746129}
@@ -1063,9 +1136,9 @@ GameObject:
   - 50: {fileID: 649174359}
   - 60: {fileID: 649174358}
   - 114: {fileID: 649174357}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: cat
-  m_TagString: Untagged
+  m_TagString: catIgnore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1155,7 +1228,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 1016095008}
   m_GameObject: {fileID: 649174356}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: .0500000007
   m_GravityScale: 1
   m_FixedAngle: 0
@@ -1210,9 +1283,9 @@ GameObject:
   - 50: {fileID: 672501185}
   - 60: {fileID: 672501184}
   - 114: {fileID: 672501183}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: cat
-  m_TagString: Untagged
+  m_TagString: catIgnore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1302,7 +1375,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 126076798}
   m_GameObject: {fileID: 672501182}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: .0500000007
   m_GravityScale: 1
   m_FixedAngle: 0
@@ -1357,9 +1430,9 @@ GameObject:
   - 50: {fileID: 714689881}
   - 60: {fileID: 714689880}
   - 114: {fileID: 714689879}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: cat
-  m_TagString: Untagged
+  m_TagString: catIgnore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1449,7 +1522,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 1789726150}
   m_GameObject: {fileID: 714689878}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: .0500000007
   m_GravityScale: 1
   m_FixedAngle: 0
@@ -1504,9 +1577,9 @@ GameObject:
   - 50: {fileID: 715145606}
   - 60: {fileID: 715145605}
   - 114: {fileID: 715145604}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: cat
-  m_TagString: Untagged
+  m_TagString: catIgnore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1596,7 +1669,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 1674988503}
   m_GameObject: {fileID: 715145603}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: .0500000007
   m_GravityScale: 1
   m_FixedAngle: 0
@@ -1651,9 +1724,9 @@ GameObject:
   - 50: {fileID: 778294479}
   - 60: {fileID: 778294478}
   - 114: {fileID: 778294477}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: cat
-  m_TagString: Untagged
+  m_TagString: catIgnore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1755,7 +1828,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 1390090405}
   m_GameObject: {fileID: 778294475}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: .0500000007
   m_GravityScale: 1
   m_FixedAngle: 0
@@ -1798,9 +1871,9 @@ GameObject:
   - 50: {fileID: 816186796}
   - 60: {fileID: 816186795}
   - 114: {fileID: 816186794}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: cat
-  m_TagString: Untagged
+  m_TagString: catIgnore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1890,7 +1963,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 1917947547}
   m_GameObject: {fileID: 816186793}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: .0500000007
   m_GravityScale: 1
   m_FixedAngle: 0
@@ -1978,12 +2051,16 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114880, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6014880, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: c5db0dbb0e9d15c4fa8c1f0a8be95dba, type: 2}
+    - target: {fileID: 114880, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
+      propertyPath: m_TagString
+      value: catIgnore
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
   m_RootGameObject: {fileID: 1098014415}
@@ -2001,9 +2078,9 @@ GameObject:
   - 50: {fileID: 914638890}
   - 60: {fileID: 914638889}
   - 114: {fileID: 914638888}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: cat
-  m_TagString: Untagged
+  m_TagString: catIgnore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2093,7 +2170,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 2138790661}
   m_GameObject: {fileID: 914638887}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: .0500000007
   m_GravityScale: 1
   m_FixedAngle: 0
@@ -2202,9 +2279,9 @@ GameObject:
   - 4: {fileID: 1004369768}
   - 212: {fileID: 1004369770}
   - 60: {fileID: 1004369769}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Background
-  m_TagString: Untagged
+  m_TagString: catIgnore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2307,12 +2384,16 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114880, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6014880, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: c5db0dbb0e9d15c4fa8c1f0a8be95dba, type: 2}
+    - target: {fileID: 114880, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
+      propertyPath: m_TagString
+      value: catIgnore
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
   m_RootGameObject: {fileID: 649174356}
@@ -2330,9 +2411,9 @@ GameObject:
   - 50: {fileID: 1024859855}
   - 60: {fileID: 1024859854}
   - 114: {fileID: 1024859853}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: cat
-  m_TagString: Untagged
+  m_TagString: catIgnore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2422,7 +2503,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 478402183}
   m_GameObject: {fileID: 1024859852}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: .0500000007
   m_GravityScale: 1
   m_FixedAngle: 0
@@ -2477,9 +2558,9 @@ GameObject:
   - 50: {fileID: 1055116668}
   - 60: {fileID: 1055116667}
   - 114: {fileID: 1055116666}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: cat
-  m_TagString: Untagged
+  m_TagString: catIgnore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2581,7 +2662,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 1802028185}
   m_GameObject: {fileID: 1055116664}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: .0500000007
   m_GravityScale: 1
   m_FixedAngle: 0
@@ -2624,9 +2705,9 @@ GameObject:
   - 50: {fileID: 1098014419}
   - 60: {fileID: 1098014418}
   - 114: {fileID: 1098014417}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: cat
-  m_TagString: Untagged
+  m_TagString: catIgnore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2728,7 +2809,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 913483117}
   m_GameObject: {fileID: 1098014415}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: .0500000007
   m_GravityScale: 1
   m_FixedAngle: 0
@@ -2918,12 +2999,16 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114880, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6014880, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: c5db0dbb0e9d15c4fa8c1f0a8be95dba, type: 2}
+    - target: {fileID: 114880, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
+      propertyPath: m_TagString
+      value: catIgnore
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
   m_RootGameObject: {fileID: 353561780}
@@ -2970,7 +3055,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114880, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 414880, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
       propertyPath: m_LocalScale.x
@@ -2984,6 +3069,10 @@ Prefab:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: c5db0dbb0e9d15c4fa8c1f0a8be95dba, type: 2}
+    - target: {fileID: 114880, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
+      propertyPath: m_TagString
+      value: catIgnore
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
   m_RootGameObject: {fileID: 778294475}
@@ -3001,9 +3090,9 @@ GameObject:
   - 50: {fileID: 1425746132}
   - 60: {fileID: 1425746131}
   - 114: {fileID: 1425746130}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: cat
-  m_TagString: Untagged
+  m_TagString: catIgnore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3093,7 +3182,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 577346220}
   m_GameObject: {fileID: 1425746129}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: .0500000007
   m_GravityScale: 1
   m_FixedAngle: 0
@@ -3177,12 +3266,16 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114880, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6014880, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: c5db0dbb0e9d15c4fa8c1f0a8be95dba, type: 2}
+    - target: {fileID: 114880, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
+      propertyPath: m_TagString
+      value: catIgnore
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
   m_RootGameObject: {fileID: 353671050}
@@ -3229,12 +3322,16 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114880, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6014880, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: c5db0dbb0e9d15c4fa8c1f0a8be95dba, type: 2}
+    - target: {fileID: 114880, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
+      propertyPath: m_TagString
+      value: catIgnore
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
   m_RootGameObject: {fileID: 29696741}
@@ -3252,9 +3349,9 @@ GameObject:
   - 50: {fileID: 1649467483}
   - 60: {fileID: 1649467482}
   - 114: {fileID: 1649467481}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: cat
-  m_TagString: Untagged
+  m_TagString: catIgnore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3344,7 +3441,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 1808246910}
   m_GameObject: {fileID: 1649467480}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: .0500000007
   m_GravityScale: 1
   m_FixedAngle: 0
@@ -3428,12 +3525,16 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114880, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6014880, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: c5db0dbb0e9d15c4fa8c1f0a8be95dba, type: 2}
+    - target: {fileID: 114880, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
+      propertyPath: m_TagString
+      value: catIgnore
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
   m_RootGameObject: {fileID: 715145603}
@@ -3480,12 +3581,16 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114880, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6014880, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: c5db0dbb0e9d15c4fa8c1f0a8be95dba, type: 2}
+    - target: {fileID: 114880, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
+      propertyPath: m_TagString
+      value: catIgnore
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
   m_RootGameObject: {fileID: 714689878}
@@ -3532,12 +3637,16 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114880, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6014880, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: c5db0dbb0e9d15c4fa8c1f0a8be95dba, type: 2}
+    - target: {fileID: 114880, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
+      propertyPath: m_TagString
+      value: catIgnore
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
   m_RootGameObject: {fileID: 1055116664}
@@ -3668,12 +3777,16 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114880, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6014880, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: c5db0dbb0e9d15c4fa8c1f0a8be95dba, type: 2}
+    - target: {fileID: 114880, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
+      propertyPath: m_TagString
+      value: catIgnore
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
   m_RootGameObject: {fileID: 1649467480}
@@ -3720,7 +3833,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114880, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 414880, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
       propertyPath: m_LocalScale.x
@@ -3730,6 +3843,10 @@ Prefab:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: c5db0dbb0e9d15c4fa8c1f0a8be95dba, type: 2}
+    - target: {fileID: 114880, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
+      propertyPath: m_TagString
+      value: catIgnore
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
   m_RootGameObject: {fileID: 816186793}
@@ -3776,12 +3893,16 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114880, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6014880, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: c5db0dbb0e9d15c4fa8c1f0a8be95dba, type: 2}
+    - target: {fileID: 114880, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
+      propertyPath: m_TagString
+      value: catIgnore
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
   m_RootGameObject: {fileID: 459607650}
@@ -3828,12 +3949,16 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114880, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6014880, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: c5db0dbb0e9d15c4fa8c1f0a8be95dba, type: 2}
+    - target: {fileID: 114880, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
+      propertyPath: m_TagString
+      value: catIgnore
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
   m_RootGameObject: {fileID: 110693623}
@@ -3848,7 +3973,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 2076647828}
   - 212: {fileID: 2076647830}
-  - 60: {fileID: 2076647829}
+  - 60: {fileID: 2076647832}
+  - 114: {fileID: 2076647831}
+  - 114: {fileID: 2076647829}
   m_Layer: 0
   m_Name: eye0
   m_TagString: Untagged
@@ -3868,31 +3995,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1200028940}
   m_RootOrder: 17
---- !u!60 &2076647829
-PolygonCollider2D:
+--- !u!114 &2076647829
+MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6055710, guid: 0879f47b8dd36f34f9ed2240fe09f691,
+  m_PrefabParentObject: {fileID: 11499822, guid: 0879f47b8dd36f34f9ed2240fe09f691,
     type: 2}
   m_PrefabInternal: {fileID: 982511650}
   m_GameObject: {fileID: 2076647827}
   m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Poly:
-    m_Paths:
-    - - {x: .495000005, y: .119999997}
-      - {x: .254999995, y: .349999994}
-      - {x: .155000001, y: .379999995}
-      - {x: -.115000002, y: .379999995}
-      - {x: -.234999999, y: .360000014}
-      - {x: -.414999992, y: .140000001}
-      - {x: -.495000005, y: -.0199999996}
-      - {x: -.495000005, y: -.129999995}
-      - {x: -.185000002, y: -.379999995}
-      - {x: .0949999988, y: -.379999995}
-      - {x: .165000007, y: -.370000005}
-      - {x: .275000006, y: -.330000013}
-      - {x: .495000005, y: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50c6f132ea6af1d47b9c445a0b6bc958, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WideEye: {fileID: 21300006, guid: b8fb4c437c11d784e8b529ecd9b4abe4, type: 3}
+  NarrowEye: {fileID: 21300012, guid: b8fb4c437c11d784e8b529ecd9b4abe4, type: 3}
 --- !u!212 &2076647830
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3916,6 +4032,43 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300012, guid: b8fb4c437c11d784e8b529ecd9b4abe4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &2076647831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11403872, guid: 0879f47b8dd36f34f9ed2240fe09f691,
+    type: 2}
+  m_PrefabInternal: {fileID: 982511650}
+  m_GameObject: {fileID: 2076647827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 520c230eae20cd74193a41d952d43d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!60 &2076647832
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6003872, guid: 0879f47b8dd36f34f9ed2240fe09f691,
+    type: 2}
+  m_PrefabInternal: {fileID: 982511650}
+  m_GameObject: {fileID: 2076647827}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Poly:
+    m_Paths:
+    - - {x: .495000005, y: .119999997}
+      - {x: .254999995, y: .349999994}
+      - {x: .155000001, y: .379999995}
+      - {x: -.115000002, y: .379999995}
+      - {x: -.234999999, y: .360000014}
+      - {x: -.414999992, y: .140000001}
+      - {x: -.495000005, y: -.0199999996}
+      - {x: -.495000005, y: -.129999995}
+      - {x: -.185000002, y: -.379999995}
+      - {x: .0949999988, y: -.379999995}
+      - {x: .165000007, y: -.370000005}
+      - {x: .275000006, y: -.330000013}
+      - {x: .495000005, y: 0}
 --- !u!1001 &2138790661
 Prefab:
   m_ObjectHideFlags: 0
@@ -3957,7 +4110,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114880, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 414880, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
       propertyPath: m_LocalScale.x
@@ -3971,6 +4124,10 @@ Prefab:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: c5db0dbb0e9d15c4fa8c1f0a8be95dba, type: 2}
+    - target: {fileID: 114880, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
+      propertyPath: m_TagString
+      value: catIgnore
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cb563aaa647f36746b888fb9919dc8f9, type: 2}
   m_RootGameObject: {fileID: 914638887}

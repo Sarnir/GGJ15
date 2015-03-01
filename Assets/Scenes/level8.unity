@@ -362,7 +362,7 @@ Rigidbody2D:
   m_Mass: 3
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
-  m_GravityScale: -.5
+  m_GravityScale: -.519999981
   m_FixedAngle: 0
   m_IsKinematic: 0
   m_Interpolate: 1
@@ -1026,6 +1026,10 @@ Prefab:
       propertyPath: stringOwner
       value: 
       objectReference: {fileID: 1710583867}
+    - target: {fileID: 11438092, guid: dd862e8a44700d64cbb0b0abfec9cfa4, type: 2}
+      propertyPath: stringToCut
+      value: 
+      objectReference: {fileID: 1710583869}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dd862e8a44700d64cbb0b0abfec9cfa4, type: 2}
   m_RootGameObject: {fileID: 2087956956}
@@ -1139,6 +1143,14 @@ Prefab:
     - target: {fileID: 166502, guid: 0e2f5cbc3f270f7409ea8af84d70cbf3, type: 2}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5066502, guid: 0e2f5cbc3f270f7409ea8af84d70cbf3, type: 2}
+      propertyPath: m_LinearDrag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5066502, guid: 0e2f5cbc3f270f7409ea8af84d70cbf3, type: 2}
+      propertyPath: m_GravityScale
+      value: -.519999981
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0e2f5cbc3f270f7409ea8af84d70cbf3, type: 2}
@@ -2070,6 +2082,10 @@ Prefab:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 5066502, guid: 0e2f5cbc3f270f7409ea8af84d70cbf3, type: 2}
+      propertyPath: m_LinearDrag
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0e2f5cbc3f270f7409ea8af84d70cbf3, type: 2}
   m_RootGameObject: {fileID: 7064046}
@@ -2341,9 +2357,9 @@ GameObject:
   - 4: {fileID: 1592995616}
   - 212: {fileID: 1592995618}
   - 60: {fileID: 1592995617}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Background
-  m_TagString: Untagged
+  m_TagString: catIgnore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2777,6 +2793,10 @@ Prefab:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 5066502, guid: 0e2f5cbc3f270f7409ea8af84d70cbf3, type: 2}
+      propertyPath: m_LinearDrag
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0e2f5cbc3f270f7409ea8af84d70cbf3, type: 2}
   m_RootGameObject: {fileID: 1835527122}
@@ -2886,7 +2906,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 517491193}
   m_GameObject: {fileID: 1945886765}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: .0500000007
   m_GravityScale: 1
   m_FixedAngle: 0
@@ -3151,4 +3171,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b1321b5cf47de94eb381130963ceae1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stringOwner: {fileID: 1710583867}
+  stringToCut: {fileID: 1710583869}
