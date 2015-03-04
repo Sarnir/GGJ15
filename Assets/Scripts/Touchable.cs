@@ -3,20 +3,16 @@ using System.Collections;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(HighlightWhenMouseOver))]
-public class Touchable : MonoBehaviour {
-	
+public class Touchable : MonoBehaviour
+{
 	bool isTouched;
-
 	[SerializeField()]
 	GameObject cursorSpritePrefab = null;
-
 	GameObject cursorSprite;
+	[SerializeField()]
+	float touchForce = 1.0f;
 
-    [SerializeField()]
-    float touchForce = 1.0f;
-
-	// Use this for initialization
-	void Start ()
+	void Start()
 	{
 		isTouched = false;
 		cursorSprite = Instantiate(cursorSpritePrefab) as GameObject;
@@ -30,21 +26,19 @@ public class Touchable : MonoBehaviour {
 
 	void FixedUpdate()
 	{
-		if(isTouched)
+		if (isTouched)
 		{
 			var timeFactor = Time.fixedDeltaTime;
-			//var timeFactor = Time.unscaledDeltaTime;
-			var force = new Vector2(Input.GetAxis("Mouse X") / timeFactor, Input.GetAxis("Mouse Y") / timeFactor);
+			var force = new Vector2(Input.GetAxis ("Mouse X") / timeFactor, Input.GetAxis ("Mouse Y") / timeFactor);
 			force /= Time.timeScale;
-            force *= touchForce;
+			force *= touchForce;
 			rigidbody2D.AddForce(force);
 		}
 	}
-	
-	// Update is called once per frame
-	void Update ()
+
+	void Update()
 	{
-		if(isTouched)
+		if (isTouched)
 		{
 			cursorSprite.transform.position = transform.position;
 		}
@@ -52,7 +46,7 @@ public class Touchable : MonoBehaviour {
 
 	Vector2 GetMousePosition()
 	{
-		return Camera.main.ScreenToWorldPoint (Input.mousePosition);
+		return Camera.main.ScreenToWorldPoint(Input.mousePosition);
 	}
 
 	void OnMouseDown()
@@ -67,7 +61,7 @@ public class Touchable : MonoBehaviour {
 
 	void OnMouseUp()
 	{
-		cursorSprite.SetActive(false);
+		cursorSprite.SetActive (false);
 		Screen.lockCursor = false;
 		isTouched = false;
 		rigidbody2D.gravityScale = 1.0f;

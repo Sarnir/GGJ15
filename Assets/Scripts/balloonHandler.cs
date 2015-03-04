@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 [RequireComponent(typeof(SpriteRenderer))]
@@ -6,33 +6,30 @@ public class balloonHandler : MonoBehaviour
 {
 	[SerializeField()]
 	GameObject balloonPop = null;
-
 	SpriteRenderer spriteRenderer;
 
-	void Start ()
+	void Start()
 	{
 		spriteRenderer = GetComponent<SpriteRenderer>();
 	}
 
-	void Update ()
-	{
-	}
-
 	void OnMouseDown()
 	{
-        PopBalloon();
+		PopBalloon();
 	}
 
-    void PopBalloon()
-    {
-        spriteRenderer.sprite = balloonPop.GetComponent<SpriteRenderer>().sprite;
-        collider2D.enabled = false;
-        Destroy(gameObject, 0.1f);
-    }
+	void PopBalloon()
+	{
+		spriteRenderer.sprite = balloonPop.GetComponent<SpriteRenderer>().sprite;
+		collider2D.enabled = false;
+		Destroy(gameObject, 0.1f);
+	}
 
-    void OnCollisionEnter2D(Collision2D coll)
-    {
-        if (coll.gameObject.tag == "obstacle")
-            PopBalloon();
-    }
+	void OnCollisionEnter2D(Collision2D coll)
+	{
+		if (coll.gameObject.tag == "obstacle")
+		{
+			PopBalloon();
+		}
+	}
 }

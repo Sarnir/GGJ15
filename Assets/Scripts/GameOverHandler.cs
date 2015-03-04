@@ -3,11 +3,6 @@ using System.Collections;
 
 public class GameOverHandler : MonoBehaviour
 {
-	void Start ()
-	{
-	
-	}
-	
 	void Update ()
 	{
 		if (Input.GetKey(KeyCode.Return))

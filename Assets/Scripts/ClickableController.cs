@@ -6,16 +6,11 @@ public class ClickableController : MonoBehaviour
 {
 	public Sprite button_on;
 	public Sprite button_off;
-	
 	SpriteRenderer spriteRenderer;
 
-	void Start ()
+	void Start()
 	{
 		spriteRenderer = GetComponent<SpriteRenderer>();
-	}
-
-	void Update ()
-	{
 	}
 
 	void OnMouseDown()

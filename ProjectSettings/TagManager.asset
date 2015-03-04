@@ -7,6 +7,8 @@ TagManager:
   - balloon
   - obstacle
   - 
+  - cat
+  - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
   Builtin Layer 2: Ignore Raycast
@@ -40,23 +42,27 @@ TagManager:
   User Layer 30: 
   User Layer 31: 
   m_SortingLayers:
-  - name: Background
-    userID: 4
-    uniqueID: 2237482049
-    locked: 0
-  - name: Midground
-    userID: 1
-    uniqueID: 2521559555
-    locked: 0
-  - name: Foreground
-    userID: 2
-    uniqueID: 3924017453
-    locked: 0
   - name: Default
     userID: 0
     uniqueID: 0
     locked: 0
-  - name: UI
+  - name: Background
+    userID: 1
+    uniqueID: 2521559555
+    locked: 0
+  - name: Midground
+    userID: 2
+    uniqueID: 3924017453
+    locked: 0
+  - name: Foreground
     userID: 3
     uniqueID: 2001651219
+    locked: 0
+  - name: UI
+    userID: 4
+    uniqueID: 2237482049
+    locked: 0
+  - name: SuperFront
+    userID: 5
+    uniqueID: 3276699719
     locked: 0

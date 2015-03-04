@@ -112,7 +112,7 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2237482049
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300020, guid: 4ebcbce089c7f7d4cb7fe1e7f1ca5597, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -267,7 +267,7 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2237482049
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300026, guid: 3e23d0eefe8bb9447bcc5be14b1b37a4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -343,7 +343,7 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2237482049
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300018, guid: 4ebcbce089c7f7d4cb7fe1e7f1ca5597, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -730,7 +730,7 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
+  m_SortingLayerID: 2237482049
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300016, guid: 4ebcbce089c7f7d4cb7fe1e7f1ca5597, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -756,9 +756,9 @@ GameObject:
   - 4: {fileID: 1289448056}
   - 212: {fileID: 1289448055}
   - 60: {fileID: 1289448054}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Background
-  m_TagString: Untagged
+  m_TagString: catIgnore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -804,7 +804,7 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayerID: 2237482049
+  m_SortingLayerID: 2521559555
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f1e1ddb2ce3f0354d97df536323e2331, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

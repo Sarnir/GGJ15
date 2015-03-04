@@ -6,18 +6,13 @@ public class buttonHandler : MonoBehaviour
 	public GameObject toMove;
 	public float moveX;
 	public float moveY;
-
 	private bool pressed;
 	private float oldPosX;
 	private float oldPosY;
 
-	void Start ()
+	void Start()
 	{
 		pressed = false;
-	}
-
-	void Update ()
-	{
 	}
 
 	void OnMouseDown()
@@ -26,14 +21,14 @@ public class buttonHandler : MonoBehaviour
 		{
 			float newX = toMove.transform.position.x - moveX;
 			float newY = toMove.transform.position.y - moveY;
-			toMove.transform.position = new Vector2(newX, newY);
+			toMove.transform.position = new Vector2 (newX, newY);
 			pressed = false;
 		}
 		else
 		{
 			float newX = toMove.transform.position.x + moveX;
 			float newY = toMove.transform.position.y + moveY;
-			toMove.transform.position = new Vector2(newX, newY);
+			toMove.transform.position = new Vector2 (newX, newY);
 			pressed = true;
 		}
 	}

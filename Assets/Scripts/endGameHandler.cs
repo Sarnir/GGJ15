@@ -1,18 +1,18 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class endGameHandler : MonoBehaviour
+public class EndGameHandler : MonoBehaviour
 {
-	void Start ()
+	void Start()
 	{
 		Time.timeScale = 1.0f;
 	}
 
-	void Update ()
+	void Update()
 	{
 		if (Input.GetKey(KeyCode.Return))
 		{
-			Application.LoadLevel ("menu");
+			Application.LoadLevel("menu");
 		}
 	}
 }

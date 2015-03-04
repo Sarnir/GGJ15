@@ -7,8 +7,4 @@ public class MenuHandler : MonoBehaviour
 	{
 		audio.Play();
 	}
-
-	void Update ()
-	{
-	}
 }

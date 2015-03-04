@@ -3,14 +3,6 @@ using System.Collections;
 
 public class playButton : MonoBehaviour
 {
-	void Start ()
-	{
-	}
-
-	void Update ()
-	{
-	}
-
 	void OnMouseUp()
 	{
         PlayerPrefs.Save();

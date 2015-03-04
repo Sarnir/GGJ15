@@ -17,7 +17,7 @@ public class LevelController : MonoBehaviour
 
 	FelineButtonHandler felineButtonHandler;
 
-	void Start ()
+	void Start()
 	{
 		levelClear = Instantiate(levelClearPrefab) as GameObject;
 		levelClear.SetActive(false);
@@ -65,7 +65,7 @@ public class LevelController : MonoBehaviour
 		felineButtonHandler.setFelineMode(felineModeOn);
 	}
 	
-	void Update ()
+	void Update()
 	{
 		if (levelCleared)
 		{
@@ -74,9 +74,13 @@ public class LevelController : MonoBehaviour
 		if ((levelCleared && Input.GetKey(KeyCode.Return)) || Input.GetKey(KeyCode.F))
 		{
 			if (Application.loadedLevel == lastLevel)
+			{
 				Application.LoadLevel("endGame");
+			}
 			else
+			{
 				Application.LoadLevel(Application.loadedLevel + 1);
+			}
 		}
 		else if (Input.GetKey(KeyCode.Escape))
 		{
@@ -91,12 +95,15 @@ public class LevelController : MonoBehaviour
 		felineModeOn = felineButtonHandler.IsFelineMode();
 
 		if(felineModeOn)
+		{
 			lerpProgress -= Time.fixedDeltaTime * shiftSpeed;
+		}
 		else
+		{
 			lerpProgress += Time.fixedDeltaTime * shiftSpeed;
+		}
 
 		lerpProgress = Mathf.Clamp01(lerpProgress);
-
 		Time.timeScale = Mathf.Lerp(slowmoScale, normalScale, lerpProgress);
     }
 }

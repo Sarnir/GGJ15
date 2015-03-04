@@ -2,22 +2,18 @@
 using System.Collections;
 
 [RequireComponent(typeof(SpriteRenderer))]
-public class FelineButtonHandler : MonoBehaviour {
-
+public class FelineButtonHandler : MonoBehaviour
+{
 	[SerializeField()]
 	Sprite WideEye = null;
-
 	[SerializeField()]
 	Sprite NarrowEye = null;
-
 	SpriteRenderer spriteRenderer;
-
 	bool isFelineMode;
 
-	// Use this for initialization
-	void Start ()
+	void Start()
 	{
-		spriteRenderer = GetComponent<SpriteRenderer>();
+		spriteRenderer = GetComponent<SpriteRenderer> ();
 	}
 
 	public bool IsFelineMode()
@@ -25,15 +21,14 @@ public class FelineButtonHandler : MonoBehaviour {
 		return isFelineMode;
 	}
 
-	public void setFelineMode(bool val)
+	public void setFelineMode (bool val)
 	{
 		isFelineMode = val;
 	}
-	
-	// Update is called once per frame
+
 	void Update ()
 	{
-		if(isFelineMode)
+		if (isFelineMode)
 		{
 			spriteRenderer.sprite = NarrowEye;
 		}

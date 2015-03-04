@@ -8,7 +8,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 416290}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24,7 +24,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 437094}
   - 212: {fileID: 21237094}
-  m_Layer: 0
+  - 61: {fileID: 6194066}
+  m_Layer: 5
   m_Name: shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +41,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 441526}
   - 212: {fileID: 21241526}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: textEnter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56,7 +57,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 475090}
   - 82: {fileID: 8258088}
-  m_Layer: 0
+  - 61: {fileID: 6160418}
+  - 212: {fileID: 21244924}
+  m_Layer: 5
   m_Name: LevelClear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +75,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 475092}
   - 212: {fileID: 21275092}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: levelClear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,7 +91,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 475094}
   - 212: {fileID: 21275094}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: cat_look
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -172,6 +175,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 416290}
   m_RootOrder: 2
+--- !u!61 &6160418
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 175090}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: 15.5799999, y: 9.09000015}
+  m_Center: {x: 0, y: 0}
+--- !u!61 &6194066
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 137094}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: 6.4000001, y: 3.99999976}
+  m_Center: {x: 0, y: 0}
 --- !u!82 &8258088
 AudioSource:
   m_ObjectHideFlags: 1
@@ -248,8 +273,8 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayerID: 2001651219
-  m_SortingOrder: -1
+  m_SortingLayerID: 3276699719
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: ce259849a28082d41b77bdb7345375d7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &21241526
@@ -270,9 +295,31 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayerID: 2001651219
-  m_SortingOrder: 0
+  m_SortingLayerID: 3276699719
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300014, guid: 4ebcbce089c7f7d4cb7fe1e7f1ca5597, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!212 &21244924
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 175090}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 3276699719
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &21275092
 SpriteRenderer:
@@ -292,8 +339,8 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayerID: 2001651219
-  m_SortingOrder: 0
+  m_SortingLayerID: 3276699719
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: c57380cf617668e48a32e6521c977a6d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &21275094
@@ -314,8 +361,8 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayerID: 2001651219
-  m_SortingOrder: 0
+  m_SortingLayerID: 3276699719
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300004, guid: eb8639c523a07284db47fb08a735a37f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000

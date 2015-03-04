@@ -81,6 +81,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursorSpritePrefab: {fileID: 131642, guid: 39d58a3b652af994e89bc3b9e3762568, type: 2}
+  touchForce: 1
 --- !u!212 &21288804
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -99,7 +100,7 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayerID: 3924017453
+  m_SortingLayerID: 2001651219
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300028, guid: 3e23d0eefe8bb9447bcc5be14b1b37a4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
