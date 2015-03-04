@@ -124,7 +124,7 @@ Prefab:
     - target: {fileID: 11438092, guid: dd862e8a44700d64cbb0b0abfec9cfa4, type: 2}
       propertyPath: stringToCut
       value: 
-      objectReference: {fileID: 987367257}
+      objectReference: {fileID: 1845451164}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dd862e8a44700d64cbb0b0abfec9cfa4, type: 2}
   m_RootGameObject: {fileID: 1446571355}
@@ -156,7 +156,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 909350432}
   m_GameObject: {fileID: 196973403}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: .25
   m_AngularDrag: .0500000007
   m_GravityScale: 1
   m_FixedAngle: 0
@@ -479,7 +479,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 473856, guid: 0879f47b8dd36f34f9ed2240fe09f691, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 7.63000011
+      value: 7.57999992
       objectReference: {fileID: 0}
     - target: {fileID: 473856, guid: 0879f47b8dd36f34f9ed2240fe09f691, type: 2}
       propertyPath: m_RootOrder
@@ -817,7 +817,6 @@ GameObject:
   - 212: {fileID: 987367261}
   - 61: {fileID: 987367260}
   - 50: {fileID: 987367259}
-  - 232: {fileID: 987367257}
   m_Layer: 0
   m_Name: woodBlockDynamic
   m_TagString: Untagged
@@ -825,19 +824,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!232 &987367257
-DistanceJoint2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 987367256}
-  m_Enabled: 1
-  m_CollideConnected: 1
-  m_ConnectedRigidBody: {fileID: 0}
-  m_Anchor: {x: .920000017, y: 0}
-  m_ConnectedAnchor: {x: 2.22830701, y: 4.23880911}
-  m_Distance: 1.38999999
-  m_MaxDistanceOnly: 0
 --- !u!50 &987367259
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -927,7 +913,7 @@ Transform:
   m_PrefabInternal: {fileID: 422271596}
   m_GameObject: {fileID: 1045842199}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.28999996, y: 7.63000011, z: 0}
+  m_LocalPosition: {x: 4.28999996, y: 7.57999992, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1471094779}
@@ -1255,7 +1241,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b1321b5cf47de94eb381130963ceae1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stringToCut: {fileID: 987367257}
+  stringToCut: {fileID: 1845451164}
 --- !u!1 &1471094778
 GameObject:
   m_ObjectHideFlags: 0
@@ -1645,6 +1631,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1845451163}
   - 212: {fileID: 1845451162}
+  - 50: {fileID: 1845451165}
+  - 232: {fileID: 1845451164}
   m_Layer: 0
   m_Name: hook
   m_TagString: Untagged
@@ -1681,11 +1669,39 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1845451161}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.72005081, y: 7.80806541, z: 0}
+  m_LocalPosition: {x: 2.704, y: 7.80999994, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1694584603}
   m_RootOrder: 6
+--- !u!232 &1845451164
+DistanceJoint2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1845451161}
+  m_Enabled: 1
+  m_CollideConnected: 1
+  m_ConnectedRigidBody: {fileID: 987367259}
+  m_Anchor: {x: .0700000003, y: -.360000014}
+  m_ConnectedAnchor: {x: .945785046, y: .0314595439}
+  m_Distance: 1.35000002
+  m_MaxDistanceOnly: 0
+--- !u!50 &1845451165
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1845451161}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_FixedAngle: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!1 &1918069707
 GameObject:
   m_ObjectHideFlags: 0
